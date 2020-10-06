@@ -1,0 +1,2 @@
+class ClubWatchlistsController < ApplicationController
+end
