@@ -1,0 +1,2 @@
+class MovieMeetingsController < ApplicationController
+end
