@@ -9,6 +9,8 @@ Rails.application.routes.draw do
       resources :clubs
       resources :user_clubs
       resources :users
+      post 'login', to: 'auth#create'
+      get 'profile', to: 'users#profile'
     end
   end
 
