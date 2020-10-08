@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_06_212739) do
+ActiveRecord::Schema.define(version: 2020_10_07_213329) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_212739) do
     t.string "image"
     t.integer "member_count"
     t.integer "memory_capacity"
-    t.boolean "privacy"
+    t.boolean "privacy", default: false
     t.integer "host_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_212739) do
     t.string "time"
     t.string "link"
     t.text "about"
-    t.string "excerpt"
+    t.string "excerpt", default: ""
     t.integer "club_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -88,7 +88,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_212739) do
     t.string "birthday"
     t.string "image"
     t.string "password_digest"
-    t.boolean "admin"
+    t.boolean "admin", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "email"
