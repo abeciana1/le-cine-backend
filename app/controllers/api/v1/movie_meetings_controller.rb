@@ -1,4 +1,5 @@
 class Api::V1::MovieMeetingsController < ApplicationController
+    skip_before_action :authorized, only: [:index, :create, :show]
     
     def index
         movie_meetings = MovieMeeting.all

@@ -1,5 +1,6 @@
 class Api::V1::ClubsController < ApplicationController
-    
+    skip_before_action :authorized, only: [:index, :create, :show]
+
     def index
         clubs = Club.all
         render :json => clubs, each_serializer: ClubSerializer
