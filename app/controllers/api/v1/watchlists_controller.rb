@@ -1,4 +1,5 @@
 class Api::V1::WatchlistsController < ApplicationController
+    skip_before_action :authorized, only: [:index, :create]
     
     def index
         watchlists = Watchlist.all
