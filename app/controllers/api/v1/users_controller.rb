@@ -1,11 +1,16 @@
 require 'pry'
 
 class Api::V1::UsersController < ApplicationController
-    skip_before_action :authorized, only: [:index, :create]
+    skip_before_action :authorized, only: [:index, :create, :show]
     
     def index
         users = User.all
         render :json => users, each_serializer: UserSerializer
+    end
+
+    def show
+        user = User.find(params[:id])
+        render :json => user, each_serializer: UserSerializer
     end
     
     def profile

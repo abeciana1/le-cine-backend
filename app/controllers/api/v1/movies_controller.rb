@@ -1,4 +1,5 @@
 class Api::V1::MoviesController < ApplicationController
+    skip_before_action :authorized, only: [:index, :create]
     
     def index
         movies = Movie.all

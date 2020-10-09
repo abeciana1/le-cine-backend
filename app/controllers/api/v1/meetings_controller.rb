@@ -1,5 +1,5 @@
 class Api::V1::MeetingsController < ApplicationController
-    before_action :find_meeting, only: [:show, :edit, :delete]
+    skip_before_action :authorized, only: [:index, :create, :show]
     
     def index
         meetings = Meeting.all
