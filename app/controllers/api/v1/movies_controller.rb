@@ -1,9 +1,16 @@
+require 'pry'
+
 class Api::V1::MoviesController < ApplicationController
-    skip_before_action :authorized, only: [:index, :create]
+    skip_before_action :authorized, only: [:index, :create, :search]
     
     def index
         movies = Movie.all
         render :json => movies, each_serializer: MovieSerializer
+    end
+
+    def search
+        title = Movie.results(params[:title])
+        render json: title, except: [:created_at, :updated_at]
     end
     
     def show
@@ -35,7 +42,8 @@ class Api::V1::MoviesController < ApplicationController
     private
     
     def movie_params
-        params.require(:movie).permit(:backdrop_image, :title, :poster, :genres, :tmdb_id, :imdb_id, :trailer, :tagline, :plot, :runtime, :language, :release_date)
+        # params.require(:movie).permit(:backdrop_image, :title, :poster, :genres, :tmdb_id, :imdb_id, :trailer, :tagline, :plot, :runtime, :language, :release_date)
+        params.permit(:backdrop_image, :title, :poster, :genres, :tmdb_id, :imdb_id, :trailer, :tagline, :plot, :runtime, :language, :release_date)
     end
     
     
