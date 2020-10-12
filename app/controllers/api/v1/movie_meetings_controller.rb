@@ -14,7 +14,7 @@ class Api::V1::MovieMeetingsController < ApplicationController
     def create
         movie_meeting = MovieMeeting.create(movie_meeting_params)
         if movie_meeting.valid?
-            render json: { movie_meeting: MovieMeeting.new(movie_meeting)}, status: :created
+            render json: { movie_meeting: MovieMeetingSerializer.new(movie_meeting)}, status: :created
         else
             render json: { error: 'failed to add movie to meeting'}, status: :not_acceptable
         end

@@ -14,7 +14,7 @@ class Api::V1::ClubsController < ApplicationController
     def create
         club = Club.create(club_params)
         if club.valid?
-            render json: {club: Club.new(club)}, status: :created
+            render json: {club: ClubSerializer.new(club)}, status: :created
         else
             render json: { error: 'failed to create club' }, status: :not_acceptable
         end

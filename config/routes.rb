@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :meetings
       resources :movie_meetings
       post '/search', to: 'movies#search'
+      post 'details', to: 'movies#details'
       resources :movies
       resources :watchlists
       resources :club_watchlists
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
       resources :users
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
+      post '/find-club', to: 'user_clubs#find_user_club'
       # post '/search', to: 'movie_records#create'
       # post 'search', to: 'movierecords#create'
     end
