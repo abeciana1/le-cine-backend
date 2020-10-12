@@ -14,7 +14,7 @@ class Api::V1::MeetingsController < ApplicationController
     def create
         meeting = Meeting.create(meeting_params)
         if meeting.valid?
-            render json: {meeting: Meeting.new(meeting)}, status: :created
+            render json: {meeting: MeetingSerializer.new(meeting)}, status: :created
         else
             render json: {eror: 'failed to create meeting'}, status: :not_acceptable
         end

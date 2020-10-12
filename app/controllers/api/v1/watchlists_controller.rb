@@ -1,7 +1,10 @@
+require 'pry'
+
 class Api::V1::WatchlistsController < ApplicationController
-    skip_before_action :authorized, only: [:index]
+    skip_before_action :authorized, only: [:index, :create, :destroy]
     
     def index
+        binding.pry
         watchlists = Watchlist.all
         render :json => watchlists, each_serializer: WatchlistSerializer
     end
@@ -12,9 +15,10 @@ class Api::V1::WatchlistsController < ApplicationController
     end
     
     def create
+        # binding.pry
         watchlist = Watchlist.create(watchlist_params)
         if watchlist.valid?
-            render json: { watchlistL: Watchlist.new(watchlist)}, status: :created
+            render json: { watchlist: WatchlistSerializer.new(watchlist)}, status: :created
         else
             render json: { error: 'failed to create watchlist'}, status: :not_acceptable
         end
@@ -26,7 +30,8 @@ class Api::V1::WatchlistsController < ApplicationController
         render :json => watchlist, each_serializer: WatchlistSerializer
     end
     
-    def delete
+    def destroy
+        # binding.pry
         watchlist = Watchlist.find(params[:id])
         watchlist.destroy
         render json: {}
