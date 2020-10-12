@@ -14,7 +14,7 @@ class Api::V1::ClubWatchlistsController < ApplicationController
 
         club_watchlist = ClubWatchlist.create(club_watchlist_params)
         if club_watchlist.valid?
-            render json: {club_watchlist: ClubWatchlist.new(club_watchlist)}, status: :created
+            render json: {club_watchlist: ClubWatchlistSerializer.new(club_watchlist)}, status: :created
         else
             render json: { error: 'failed to create club watchlist'}, status: :not_acceptable
         end
