@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_10_11_023418) do
-=======
-ActiveRecord::Schema.define(version: 2020_10_10_002805) do
->>>>>>> 7041bb37c19b5700d78882007ed4b19188e6dc20
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,26 +64,12 @@ ActiveRecord::Schema.define(version: 2020_10_10_002805) do
   end
 
   create_table "movies", force: :cascade do |t|
-<<<<<<< HEAD
     t.string "backdrop_path"
     t.string "title"
     t.string "poster_path"
     t.integer "mov_id"
     t.text "overview"
     t.string "original_language"
-=======
-    t.string "backdrop_image"
-    t.string "title"
-    t.string "poster"
-    t.string "genres"
-    t.integer "tmdb_id"
-    t.string "imdb_id"
-    t.string "trailer"
-    t.string "tagline"
-    t.text "plot"
-    t.integer "runtime"
-    t.string "language"
->>>>>>> 7041bb37c19b5700d78882007ed4b19188e6dc20
     t.string "release_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
