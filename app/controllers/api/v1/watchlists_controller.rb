@@ -30,12 +30,8 @@ class Api::V1::WatchlistsController < ApplicationController
         render :json => watchlist, each_serializer: WatchlistSerializer
     end
     
-<<<<<<< HEAD
     def destroy
         # binding.pry
-=======
-    def delete
->>>>>>> 7041bb37c19b5700d78882007ed4b19188e6dc20
         watchlist = Watchlist.find(params[:id])
         watchlist.destroy
         render json: {}

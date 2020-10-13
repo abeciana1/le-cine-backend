@@ -34,11 +34,7 @@ class Api::V1::UserClubsController < ApplicationController
         render :json => user_club, each_serializer: UserClubSerializer
     end
     
-<<<<<<< HEAD
     def destroy
-=======
-    def delete
->>>>>>> 7041bb37c19b5700d78882007ed4b19188e6dc20
         user_club = UserClub.find(params[:id])
         user_club.destroy
         render json: {}
