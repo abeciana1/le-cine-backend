@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
       post '/find-club', to: 'user_clubs#find_user_club'
+      post '/find-club-watchlist', to: 'club_watchlists#find_club_watchlist'
       # post '/search', to: 'movie_records#create'
       # post 'search', to: 'movierecords#create'
     end

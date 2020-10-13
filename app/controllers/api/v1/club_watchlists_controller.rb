@@ -1,5 +1,9 @@
+require 'pry'
+
 class Api::V1::ClubWatchlistsController < ApplicationController
-    
+    skip_before_action :authorized, only: [:index, :create, :find_club_watchlist, :destroy]
+
+
     def index
         club_watchlists = ClubWatchlist.all
         render :json => club_watchlists, each_serializer: ClubWatchlistSerializer
@@ -7,6 +11,12 @@ class Api::V1::ClubWatchlistsController < ApplicationController
     
     def show
         club_watchlist = ClubWatchlist.find(params[:id])
+        render :json => club_watchlist, each_serializer: ClubWatchlistSerializer
+    end
+
+    def find_club_watchlist
+        # binding.pry
+        club_watchlist = ClubWatchlist.find_by(club_watchlist_params)
         render :json => club_watchlist, each_serializer: ClubWatchlistSerializer
     end
     
@@ -26,7 +36,7 @@ class Api::V1::ClubWatchlistsController < ApplicationController
         render :json => club_watchlist, each_serializer: ClubWatchlistSerializer
     end
     
-    def delete
+    def destroy
         club_watchlist = ClubWatchlist.find(params[:id])
         club_watchlist.destroy
         render json: {}
