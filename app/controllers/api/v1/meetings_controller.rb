@@ -1,5 +1,7 @@
+require 'pry'
+
 class Api::V1::MeetingsController < ApplicationController
-    skip_before_action :authorized, only: [:index, :create, :show]
+    skip_before_action :authorized, only: [:index, :show, :create, :update, :destroy]
     
     def index
         meetings = Meeting.all
@@ -12,6 +14,7 @@ class Api::V1::MeetingsController < ApplicationController
     end
     
     def create
+        # binding.pry
         meeting = Meeting.create(meeting_params)
         if meeting.valid?
             render json: {meeting: MeetingSerializer.new(meeting)}, status: :created
@@ -26,7 +29,7 @@ class Api::V1::MeetingsController < ApplicationController
         render :json => meeting, each_serializer: MeetingSerializer
     end
     
-    def delete
+    def destroy
         meeting = Meeting.find(params[:id])
         meeting.destroy
         render json: {}
