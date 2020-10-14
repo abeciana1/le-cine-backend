@@ -1,5 +1,5 @@
 class Api::V1::MovieMeetingsController < ApplicationController
-    skip_before_action :authorized, only: [:index, :create, :show]
+    skip_before_action :authorized, only: [:index, :create, :show, :destroy]
     
     def index
         movie_meetings = MovieMeeting.all
@@ -26,7 +26,7 @@ class Api::V1::MovieMeetingsController < ApplicationController
         render :json => movie_meeting, each_serializer: MovieMeetingSerializer
     end
     
-    def delete
+    def destroy
         movie_meeting = MovieMeeting.find(params[:id])
         movie_meeting.destroy
         render json: {}

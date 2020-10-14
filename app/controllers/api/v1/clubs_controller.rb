@@ -1,5 +1,5 @@
 class Api::V1::ClubsController < ApplicationController
-    skip_before_action :authorized, only: [:index, :create, :show]
+    skip_before_action :authorized, only: [:index, :create, :show, :update, :destroy]
 
     def index
         clubs = Club.all
@@ -22,12 +22,13 @@ class Api::V1::ClubsController < ApplicationController
 
     
     def update
+        binding.pry
         club = Club.find(params[:id])
         club.update(club_params)
         render :json => club, each_serializer: ClubSerializer
     end
     
-    def delete
+    def destroy
         club = Club.find(params[:id])
         club.destroy
         render json: {}
@@ -36,7 +37,7 @@ class Api::V1::ClubsController < ApplicationController
     private
     
     def club_params
-        params.require(:club).permit(:name, :about, :city, :state, :country, :image, :member_count, :memory_capacity, :privacy, :host_id)
+        params.require(:club).permit(:name, :about, :city, :state, :country, :image, :member_count, :member_capacity, :privacy, :host_id)
     end
     
     

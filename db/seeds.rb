@@ -25,9 +25,9 @@ alex = User.create(first_name: "Alex", last_name: "Beciana", email: "alex@test.c
 end
 
 puts "clubs"
-Club.create(name: "PRIVATE CLUB", about: "All about movies", city: Faker::Address.unique.city, state: Faker::Address.unique.state, country: Faker::Address.unique.country, image: Faker::Avatar.image, member_count: rand(15...25), memory_capacity: 35, privacy: true, host_id: alex.id)
+Club.create(name: "PRIVATE CLUB", about: "All about movies", city: Faker::Address.unique.city, state: Faker::Address.unique.state, country: Faker::Address.unique.country, image: Faker::Avatar.image, member_count: rand(15...25), member_capacity: 35, privacy: true, host_id: alex.id)
 10.times do
-    Club.create(name: "Fake Club Name", about: "All about movies", city: Faker::Address.unique.city, state: Faker::Address.unique.state, country: Faker::Address.unique.country, image: Faker::Avatar.image, member_count: rand(15...25), memory_capacity: 35, privacy: false, host_id: User.all.sample.id)
+    Club.create(name: "Fake Club Name", about: "All about movies", city: Faker::Address.unique.city, state: Faker::Address.unique.state, country: Faker::Address.unique.country, image: Faker::Avatar.image, member_count: rand(15...25), member_capacity: 35, privacy: false, host_id: User.all.sample.id)
 end
 
 puts "movie"
