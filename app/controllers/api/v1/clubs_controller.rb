@@ -22,7 +22,7 @@ class Api::V1::ClubsController < ApplicationController
 
     
     def update
-        binding.pry
+        # binding.pry
         club = Club.find(params[:id])
         club.update(club_params)
         render :json => club, each_serializer: ClubSerializer

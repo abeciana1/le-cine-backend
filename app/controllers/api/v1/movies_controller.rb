@@ -1,7 +1,7 @@
 require 'pry'
 
 class Api::V1::MoviesController < ApplicationController
-    skip_before_action :authorized, only: [:index, :create, :search, :details]
+    skip_before_action :authorized, only: [:index, :show, :create, :search, :details]
     
     def index
         movies = Movie.all

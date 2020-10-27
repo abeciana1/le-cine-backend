@@ -1,10 +1,10 @@
 require 'pry'
 
 class Api::V1::WatchlistsController < ApplicationController
-    skip_before_action :authorized, only: [:index, :create, :destroy]
+    skip_before_action :authorized, only: [:index, :show, :create, :destroy]
     
     def index
-        binding.pry
+        # binding.pry
         watchlists = Watchlist.all
         render :json => watchlists, each_serializer: WatchlistSerializer
     end

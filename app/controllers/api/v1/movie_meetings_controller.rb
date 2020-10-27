@@ -35,7 +35,7 @@ class Api::V1::MovieMeetingsController < ApplicationController
     private
     
     def movie_meeting_params
-        params.require(:movie_meeting).permit(:movie_id, :meeting_id, :discussion, :watch_along)
+        params.require(:movie_meeting).permit(:movie_id, :meeting_id, :discussion, :watch_along, :source_name, :source_url)
     end
     
     
