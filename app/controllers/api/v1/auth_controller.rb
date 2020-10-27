@@ -11,13 +11,15 @@ class Api::V1::AuthController < ApplicationController
             render json: { user: UserSerializer.new(@user), jwt: token }, status: :accepted
         else
             render json: { message: 'Invalid username or password' }, status: :unauthorized
+            # binding.pry
         end
     end
 
     private
 
     def user_login_params
+        # binding.pry
         # params.permit(:email, :password)
-        params.require(:auth).permit(:email, :password)
+        params.require(:user).permit(:email, :password)
     end
 end
