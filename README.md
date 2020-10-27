@@ -3,10 +3,12 @@ A film club management app to bring meaningful conversation and film lovers toge
 
 <h2>Tech Specs</h2>
 
-- 
+- Ruby version - 2.6.1
+- Database - PostgreSQL
 
 <h2>Installation Instructions</h2>
 
+- Run `bundle install`
 - Run `rails db:create`
 - Run `rails db:migrate`
 - Run `rails db:seed`
@@ -22,4 +24,3 @@ Thankfully, my friend Russell found this as an opportunity to create a safe esca
 <h2>Database Relationships</h2>
 
 You can view my SQL database diagram <a href="https://drawsql.app/alex-beciana/diagrams/film-club-core" alt="Le Cine Database Diagrams">here</a>.
-=======
