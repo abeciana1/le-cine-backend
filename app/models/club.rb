@@ -5,4 +5,5 @@ class Club < ApplicationRecord
     has_many :club_watchlists
     has_many :movies, through: :club_watchlists
     has_many :meetings
+    # has_one_attached :image
 end
