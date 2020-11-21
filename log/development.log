@@ -1,3 +1,656 @@
 version https://git-lfs.github.com/spec/v1
 oid sha256:d60a920c882286b584b4e9869335a93e70e64cc36fb1172c836f1e4d61d74ccb
 size 478671351
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6455717514138254565)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6455717514138254565)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 32]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 33]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 34]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 35]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 36]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 37]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 38]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 39]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 40]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 41]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 42]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 43]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 44]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 45]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 46]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 47]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 48]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 49]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 50]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 51]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 52]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 53]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 54]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 55]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 56]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 57]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 58]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 59]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 60]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 61]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 62]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (1.9ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.3ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.6ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.4ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 23]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.2ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 24]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Destroy (0.5ms)[0m  [1m[31mDELETE FROM "clubs" WHERE "clubs"."id" = $1[0m  [["id", 25]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMovie Load (1.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.7ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClubWatchlist Load (0.6ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClubWatchlist Destroy (0.4ms)[0m  [1m[31mDELETE FROM "club_watchlists" WHERE "club_watchlists"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClubWatchlist Destroy (0.2ms)[0m  [1m[31mDELETE FROM "club_watchlists" WHERE "club_watchlists"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClubWatchlist Destroy (0.4ms)[0m  [1m[31mDELETE FROM "club_watchlists" WHERE "club_watchlists"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mWatchlist Load (0.8ms)[0m  [1m[34mSELECT "watchlists".* FROM "watchlists"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWatchlist Destroy (0.4ms)[0m  [1m[31mDELETE FROM "watchlists" WHERE "watchlists"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (0.2ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (0.2ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (0.1ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (0.2ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (0.5ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (0.1ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (0.1ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (1.1ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (0.5ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMeeting Destroy (0.5ms)[0m  [1m[31mDELETE FROM "meetings" WHERE "meetings"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMovieMeeting Load (1.2ms)[0m  [1m[34mSELECT "movie_meetings".* FROM "movie_meetings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovieMeeting Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movie_meetings" WHERE "movie_meetings"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovieMeeting Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movie_meetings" WHERE "movie_meetings"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovieMeeting Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movie_meetings" WHERE "movie_meetings"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUserClub Load (0.5ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 32]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 33]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 34]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 35]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 36]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.1ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 37]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 38]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 39]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 40]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 41]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.1ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 42]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.1ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 43]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.6ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 44]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 45]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 46]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 47]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 48]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.6ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 49]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 50]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUserClub Destroy (0.1ms)[0m  [1m[31mDELETE FROM "user_clubs" WHERE "user_clubs"."id" = $1[0m  [["id", 51]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (15.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "admin", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Alex"], ["last_name", "Beciana"], ["birthday", "1994-08-17"], ["image", "https://avatars1.githubusercontent.com/u/36319554?s=400&u=492c8442f54f3c200317d6304f612f05f3b5b085&v=4"], ["password_digest", "$2a$12$2p5Ujx69hOJPiYfyv.nikuwOmYxii7fXtV6rlDbnRg8uN2wlwQ48O"], ["admin", true], ["created_at", "2020-11-21 22:15:31.662236"], ["updated_at", "2020-11-21 22:15:31.662236"], ["email", "alex@test.com"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Nestor"], ["last_name", "Keebler"], ["birthday", "1985-10-30"], ["image", "https://robohash.org/officiisprovidentaspernatur.png?size=300x300&set=set1"], ["password_digest", "$2a$12$AUuaP1RK1ZnbEBu9RGMC2e0wIHsEZit.I.hfmStjg5AeaJlG7GoCu"], ["created_at", "2020-11-21 22:15:32.650972"], ["updated_at", "2020-11-21 22:15:32.650972"], ["email", "eugene@ebertkuhlman.info"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Reatha"], ["last_name", "Heidenreich"], ["birthday", "1989-10-11"], ["image", "https://robohash.org/inutet.png?size=300x300&set=set1"], ["password_digest", "$2a$12$sq/gF2u5dVIOIveJVZpfSe0aE7gqHmdEFqpXS2hG5IAp1dWFleTii"], ["created_at", "2020-11-21 22:15:32.891630"], ["updated_at", "2020-11-21 22:15:32.891630"], ["email", "devon@keebler.name"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Everett"], ["last_name", "Doyle"], ["birthday", "1992-07-08"], ["image", "https://robohash.org/consequaturquibusdamperferendis.png?size=300x300&set=set1"], ["password_digest", "$2a$12$6WpAccu/vTvgLILapXoYyuxdsg6iGsb8wgWH/fxuXTFP0h.nw4xzC"], ["created_at", "2020-11-21 22:15:33.133259"], ["updated_at", "2020-11-21 22:15:33.133259"], ["email", "mistykling@schaefer.com"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Garret"], ["last_name", "Hagenes"], ["birthday", "1990-01-17"], ["image", "https://robohash.org/rerumconsecteturdolore.png?size=300x300&set=set1"], ["password_digest", "$2a$12$hSM0bCIkdyFKMenaY1.xSuW0H3KGhhGCiTDgOuH3rzfnnjpKe4cSC"], ["created_at", "2020-11-21 22:15:33.374179"], ["updated_at", "2020-11-21 22:15:33.374179"], ["email", "ericmante@schaefer.org"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Donny"], ["last_name", "Brown"], ["birthday", "1992-04-09"], ["image", "https://robohash.org/sedillumconsectetur.png?size=300x300&set=set1"], ["password_digest", "$2a$12$X00WWedfe1VI.gYVuDK9Geo//X9MpBED6rwB204M2U.jLDmFsDGxG"], ["created_at", "2020-11-21 22:15:33.620151"], ["updated_at", "2020-11-21 22:15:33.620151"], ["email", "velvet@kuvalisblick.info"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "France"], ["last_name", "Kshlerin"], ["birthday", "1989-11-05"], ["image", "https://robohash.org/ullamsimiliqueeum.png?size=300x300&set=set1"], ["password_digest", "$2a$12$lbypqLo/FXMcX3djg59xdO9yY1bgUu9PUZKVGHQVPWur2SibpySai"], ["created_at", "2020-11-21 22:15:33.860931"], ["updated_at", "2020-11-21 22:15:33.860931"], ["email", "deewyman@bashirianwill.org"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Pierre"], ["last_name", "Mann"], ["birthday", "1988-02-03"], ["image", "https://robohash.org/eiuseaquequia.png?size=300x300&set=set1"], ["password_digest", "$2a$12$2xExIkSQlZhLjcEPKOP6tODq4l.CazaZ0GkHXtq/0DL8QQB0M5tai"], ["created_at", "2020-11-21 22:15:34.106719"], ["updated_at", "2020-11-21 22:15:34.106719"], ["email", "parthenia@bahringer.net"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Kurt"], ["last_name", "Leffler"], ["birthday", "1995-11-03"], ["image", "https://robohash.org/voluptatemexcepturimolestias.png?size=300x300&set=set1"], ["password_digest", "$2a$12$lEe4977.ypotw5/opresGeub0u9D1sXyAdbdzL7Igtx.KtPQwsXm."], ["created_at", "2020-11-21 22:15:34.355449"], ["updated_at", "2020-11-21 22:15:34.355449"], ["email", "raymundo@klocko.info"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Sharonda"], ["last_name", "Heaney"], ["birthday", "1990-07-02"], ["image", "https://robohash.org/sequipossimusautem.png?size=300x300&set=set1"], ["password_digest", "$2a$12$ZIoZuWCf8/z/yGBEBG5RQekBUH53/zMdwsIIgBui6GLNwAABqGjba"], ["created_at", "2020-11-21 22:15:34.597914"], ["updated_at", "2020-11-21 22:15:34.597914"], ["email", "christelconnelly@conroy.co"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Lili"], ["last_name", "D'Amore"], ["birthday", "1986-01-08"], ["image", "https://robohash.org/repellatrationepraesentium.png?size=300x300&set=set1"], ["password_digest", "$2a$12$eBRvVHTd84BadJnJ0cje8eTFPbceVt771/abZtS.qfZokiL1QOH1m"], ["created_at", "2020-11-21 22:15:34.841517"], ["updated_at", "2020-11-21 22:15:34.841517"], ["email", "charleywhite@shieldsrodriguez.com"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Jamey"], ["last_name", "Homenick"], ["birthday", "1995-10-30"], ["image", "https://robohash.org/isteestdistinctio.png?size=300x300&set=set1"], ["password_digest", "$2a$12$d5UTkd7PSlB0FoKUglGvPuLWxj2wlhdjJUIK7UPJfCkdjaSkCUXsm"], ["created_at", "2020-11-21 22:15:35.082377"], ["updated_at", "2020-11-21 22:15:35.082377"], ["email", "rebeccaschiller@gottlieb.net"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Ismael"], ["last_name", "Moen"], ["birthday", "1996-06-08"], ["image", "https://robohash.org/ealaboreex.png?size=300x300&set=set1"], ["password_digest", "$2a$12$w4W77vk3BUE2XRY//a7GI.qXeR2wyRdCNH8urcTw3ODc0yIkoolq."], ["created_at", "2020-11-21 22:15:35.323234"], ["updated_at", "2020-11-21 22:15:35.323234"], ["email", "wendolynortiz@koepp.co"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Colene"], ["last_name", "Mayer"], ["birthday", "1992-09-09"], ["image", "https://robohash.org/veniammollitianecessitatibus.png?size=300x300&set=set1"], ["password_digest", "$2a$12$c20PMY3IJxBD.3ORBjipbuJixf99JVPrNeUrPSc9DkOwSDpu0m96C"], ["created_at", "2020-11-21 22:15:35.563190"], ["updated_at", "2020-11-21 22:15:35.563190"], ["email", "fermin@gibson.co"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Robert"], ["last_name", "Weber"], ["birthday", "1985-10-05"], ["image", "https://robohash.org/veritatisatoptio.png?size=300x300&set=set1"], ["password_digest", "$2a$12$N5wvbXMM1LTn5.WslP.Msu3Ixiek4m1b25/MNQYR5VBppybpvbzSm"], ["created_at", "2020-11-21 22:15:35.803940"], ["updated_at", "2020-11-21 22:15:35.803940"], ["email", "johnny@jast.net"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Jewell"], ["last_name", "Gulgowski"], ["birthday", "1993-11-05"], ["image", "https://robohash.org/voluptatesadeos.png?size=300x300&set=set1"], ["password_digest", "$2a$12$MBmC2OXhgjnhLnHV0EJHdOl8VKqf8v0QFau9nJH2lai0JDQckL0JS"], ["created_at", "2020-11-21 22:15:36.044339"], ["updated_at", "2020-11-21 22:15:36.044339"], ["email", "hongbahringer@parkergerhold.net"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Dane"], ["last_name", "Schowalter"], ["birthday", "1990-02-12"], ["image", "https://robohash.org/quiaaperiamporro.png?size=300x300&set=set1"], ["password_digest", "$2a$12$.NlrAdxn951hsTRk3NxvReH6iCz.z8Ex.SQP.JcZv.xnHS/vD1Kge"], ["created_at", "2020-11-21 22:15:36.284157"], ["updated_at", "2020-11-21 22:15:36.284157"], ["email", "donny@ledner.biz"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Son"], ["last_name", "McLaughlin"], ["birthday", "1992-11-21"], ["image", "https://robohash.org/etutomnis.png?size=300x300&set=set1"], ["password_digest", "$2a$12$Kg4b549zyqTx1a.dl0zR0uip78R7RXs0MnrR8Id9dTyhF2li99Ktm"], ["created_at", "2020-11-21 22:15:36.523932"], ["updated_at", "2020-11-21 22:15:36.523932"], ["email", "soilarowe@feest.org"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Meryl"], ["last_name", "Hoeger"], ["birthday", "1994-08-30"], ["image", "https://robohash.org/utsaepequis.png?size=300x300&set=set1"], ["password_digest", "$2a$12$746f/zQCRtlC9XqgS4i9VOq.0GIK3qn/wrAEcuVM.nVp2pprv1oV6"], ["created_at", "2020-11-21 22:15:36.763677"], ["updated_at", "2020-11-21 22:15:36.763677"], ["email", "haydenconroy@mannbaumbach.name"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Raymundo"], ["last_name", "Dicki"], ["birthday", "1994-10-15"], ["image", "https://robohash.org/magniassumendaquidem.png?size=300x300&set=set1"], ["password_digest", "$2a$12$98RuSkSHfwWvBwkFJxWuhetV0.4Efrz4AS0JVp3u2GZNiVuaouMJW"], ["created_at", "2020-11-21 22:15:37.003430"], ["updated_at", "2020-11-21 22:15:37.003430"], ["email", "rosarioharris@hackett.io"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Renate"], ["last_name", "Feest"], ["birthday", "1987-09-06"], ["image", "https://robohash.org/autemadipisciea.png?size=300x300&set=set1"], ["password_digest", "$2a$12$bG/NiOBNxklMF14n6cawI.p1h5Jy.oNOHq1D7trExUatSc3aZiqL2"], ["created_at", "2020-11-21 22:15:37.242959"], ["updated_at", "2020-11-21 22:15:37.242959"], ["email", "denver@smithfahey.com"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Boyd"], ["last_name", "Denesik"], ["birthday", "1992-04-12"], ["image", "https://robohash.org/aspernaturundemagni.png?size=300x300&set=set1"], ["password_digest", "$2a$12$tyYcR8Hu2kHinDtPC0ijMOD2/sRbSu91wituFnN2w/xfRqtBhQRSy"], ["created_at", "2020-11-21 22:15:37.482526"], ["updated_at", "2020-11-21 22:15:37.482526"], ["email", "jerald@parkerbednar.io"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Abdul"], ["last_name", "Streich"], ["birthday", "1991-10-15"], ["image", "https://robohash.org/velitquamreprehenderit.png?size=300x300&set=set1"], ["password_digest", "$2a$12$JmYRe6ihkls/bKaYF9karO357C8BgTCmjW7gEkX.m.Of81NCdMOUO"], ["created_at", "2020-11-21 22:15:37.724597"], ["updated_at", "2020-11-21 22:15:37.724597"], ["email", "gwenvonrueden@langworth.info"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Casey"], ["last_name", "MacGyver"], ["birthday", "1996-04-09"], ["image", "https://robohash.org/reprehenderitperferendisdolore.png?size=300x300&set=set1"], ["password_digest", "$2a$12$ZtLWU89lEpjnO5yKLmZJVuBaB6aWlHofommgL4QZ1YYqn1Cd74ucO"], ["created_at", "2020-11-21 22:15:37.969941"], ["updated_at", "2020-11-21 22:15:37.969941"], ["email", "noreen@bauch.com"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Adrian"], ["last_name", "Daugherty"], ["birthday", "1986-07-20"], ["image", "https://robohash.org/similiquecumquedeserunt.png?size=300x300&set=set1"], ["password_digest", "$2a$12$5I4NHw2tmO/p4G8/Pl5Sp.A7BXZWbL8ASbErhtZKTRYTCbIQDItXa"], ["created_at", "2020-11-21 22:15:38.215499"], ["updated_at", "2020-11-21 22:15:38.215499"], ["email", "andrarenner@pagac.biz"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Lyndon"], ["last_name", "Orn"], ["birthday", "1990-03-19"], ["image", "https://robohash.org/autidiste.png?size=300x300&set=set1"], ["password_digest", "$2a$12$0VzNM9xKp4WnaCa8Aa7/x.Ue3qZj5HdX5qL6LaKcp4BHKDFZtc6GO"], ["created_at", "2020-11-21 22:15:38.463247"], ["updated_at", "2020-11-21 22:15:38.463247"], ["email", "austingutkowski@nitzsche.net"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Carrol"], ["last_name", "Steuber"], ["birthday", "1991-12-10"], ["image", "https://robohash.org/eosabfacere.png?size=300x300&set=set1"], ["password_digest", "$2a$12$XIXNEfyszVvyz5Y6ZrUWUuE3nqCuAQzx92MB3fgb5364jnx4RXePe"], ["created_at", "2020-11-21 22:15:38.710911"], ["updated_at", "2020-11-21 22:15:38.710911"], ["email", "robertorice@koelpinkunze.net"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Maximo"], ["last_name", "Swaniawski"], ["birthday", "1991-09-06"], ["image", "https://robohash.org/ullamquiculpa.png?size=300x300&set=set1"], ["password_digest", "$2a$12$.fayOWvI5cZLUiHKXvcspe8fYaK2NrzgmP8LEeGtWLGWZjk0aFlTu"], ["created_at", "2020-11-21 22:15:38.956935"], ["updated_at", "2020-11-21 22:15:38.956935"], ["email", "stanford@bergnaumcasper.co"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Timmy"], ["last_name", "Rosenbaum"], ["birthday", "1996-01-27"], ["image", "https://robohash.org/estrepudiandaeautem.png?size=300x300&set=set1"], ["password_digest", "$2a$12$XJQd8CS4vrZ7cPLTp6Ry5eIBD9DyVOCw7sTh1XKpg2AhV53RPSFDy"], ["created_at", "2020-11-21 22:15:39.201904"], ["updated_at", "2020-11-21 22:15:39.201904"], ["email", "mikelschneider@cruickshank.biz"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Bessie"], ["last_name", "Dibbert"], ["birthday", "1994-01-01"], ["image", "https://robohash.org/suscipitasperioresfugiat.png?size=300x300&set=set1"], ["password_digest", "$2a$12$RdnKJMuevT7cs1mTothrA.HdU1s9ITXNk/HrXg5pzykwm.lOBGJFi"], ["created_at", "2020-11-21 22:15:39.448343"], ["updated_at", "2020-11-21 22:15:39.448343"], ["email", "asleyledner@herzoglang.io"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "birthday", "image", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Korey"], ["last_name", "Oberbrunner"], ["birthday", "1988-06-16"], ["image", "https://robohash.org/voluptatemsapientenon.png?size=300x300&set=set1"], ["password_digest", "$2a$12$uXXPJEwb5o1pX8OxkcqtXOvNJHXeszNI77vX7kWdQQHsJT8dSHLAO"], ["created_at", "2020-11-21 22:15:39.694254"], ["updated_at", "2020-11-21 22:15:39.694254"], ["email", "ruellgrimes@collinshuel.name"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mClub Create (1.5ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "privacy", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "PRIVATE CLUB"], ["about", "All about movies"], ["city", "West Minhmouth"], ["state", "West Virginia"], ["country", "Switzerland"], ["image", "https://robohash.org/minimaoptioin.png?size=300x300&set=set1"], ["member_count", 15], ["member_capacity", 35], ["privacy", true], ["host_id", 63], ["created_at", "2020-11-21 22:15:39.704575"], ["updated_at", "2020-11-21 22:15:39.704575"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "Lake Gerardtown"], ["state", "Iowa"], ["country", "Syrian Arab Republic"], ["image", "https://robohash.org/nequeoccaecatiarchitecto.png?size=300x300&set=set1"], ["member_count", 18], ["member_capacity", 35], ["host_id", 83], ["created_at", "2020-11-21 22:15:39.713276"], ["updated_at", "2020-11-21 22:15:39.713276"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[36mClub Create (0.6ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "Lake Earleanmouth"], ["state", "Virginia"], ["country", "Antigua and Barbuda"], ["image", "https://robohash.org/odioprovidentvel.png?size=300x300&set=set1"], ["member_count", 17], ["member_capacity", 35], ["host_id", 78], ["created_at", "2020-11-21 22:15:39.722729"], ["updated_at", "2020-11-21 22:15:39.722729"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "Lindgrenmouth"], ["state", "Texas"], ["country", "Mozambique"], ["image", "https://robohash.org/eosdolorab.png?size=300x300&set=set1"], ["member_count", 21], ["member_capacity", 35], ["host_id", 78], ["created_at", "2020-11-21 22:15:39.730862"], ["updated_at", "2020-11-21 22:15:39.730862"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "South Brainberg"], ["state", "Oklahoma"], ["country", "Bermuda"], ["image", "https://robohash.org/saepedolorefugit.png?size=300x300&set=set1"], ["member_count", 22], ["member_capacity", 35], ["host_id", 66], ["created_at", "2020-11-21 22:15:39.739656"], ["updated_at", "2020-11-21 22:15:39.739656"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "Dominicchester"], ["state", "Wisconsin"], ["country", "Oman"], ["image", "https://robohash.org/voluptatemeiusaperiam.png?size=300x300&set=set1"], ["member_count", 23], ["member_capacity", 35], ["host_id", 65], ["created_at", "2020-11-21 22:15:39.746350"], ["updated_at", "2020-11-21 22:15:39.746350"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "Delbertton"], ["state", "Vermont"], ["country", "New Caledonia"], ["image", "https://robohash.org/nostrumundemaxime.png?size=300x300&set=set1"], ["member_count", 15], ["member_capacity", 35], ["host_id", 67], ["created_at", "2020-11-21 22:15:39.754120"], ["updated_at", "2020-11-21 22:15:39.754120"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "Port Federico"], ["state", "Georgia"], ["country", "Venezuela"], ["image", "https://robohash.org/ullamvoluptateanimi.png?size=300x300&set=set1"], ["member_count", 17], ["member_capacity", 35], ["host_id", 76], ["created_at", "2020-11-21 22:15:39.760631"], ["updated_at", "2020-11-21 22:15:39.760631"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  [1m[36mClub Create (0.3ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "Reingerbury"], ["state", "Florida"], ["country", "El Salvador"], ["image", "https://robohash.org/providentillumlaboriosam.png?size=300x300&set=set1"], ["member_count", 20], ["member_capacity", 35], ["host_id", 86], ["created_at", "2020-11-21 22:15:39.766983"], ["updated_at", "2020-11-21 22:15:39.766983"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "West Ervin"], ["state", "Massachusetts"], ["country", "Norfolk Island"], ["image", "https://robohash.org/ametautaliquam.png?size=300x300&set=set1"], ["member_count", 16], ["member_capacity", 35], ["host_id", 81], ["created_at", "2020-11-21 22:15:39.773481"], ["updated_at", "2020-11-21 22:15:39.773481"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  [1m[36mClub Create (0.2ms)[0m  [1m[32mINSERT INTO "clubs" ("name", "about", "city", "state", "country", "image", "member_count", "member_capacity", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Fake Club Name"], ["about", "All about movies"], ["city", "Port Carminaland"], ["state", "Utah"], ["country", "Barbados"], ["image", "https://robohash.org/iuresitpossimus.png?size=300x300&set=set1"], ["member_count", 24], ["member_capacity", 35], ["host_id", 80], ["created_at", "2020-11-21 22:15:39.779291"], ["updated_at", "2020-11-21 22:15:39.779291"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (1.1ms)[0m  [1m[32mINSERT INTO "movies" ("backdrop_path", "title", "poster_path", "mov_id", "overview", "original_language", "release_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["backdrop_path", "https://image.tmdb.org/t/p/original/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg"], ["title", "Fight Club"], ["poster_path", "https://image.tmdb.org/t/p/original/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"], ["mov_id", 550], ["overview", "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion."], ["original_language", "English"], ["release_date", "1999-10-15"], ["created_at", "2020-11-21 22:15:39.781779"], ["updated_at", "2020-11-21 22:15:39.781779"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("backdrop_path", "title", "poster_path", "mov_id", "overview", "original_language", "release_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["backdrop_path", "https://image.tmdb.org/t/p/original/wC36tEU7AqP5llAvjXkZhZ248tX.jpg"], ["title", "Rocky"], ["poster_path", "https://image.tmdb.org/t/p/original/O66XFv0mU6JKfmrgkoTQLwbFDG.jpg"], ["mov_id", 1366], ["overview", "When world heavyweight boxing champion, Apollo Creed wants to give an unknown fighter a shot at the title as a publicity stunt, his handlers choose palooka Rocky Balboa, an uneducated collector for a Philadelphia loan shark. Rocky teams up with trainer  Mickey Goldmill to make the most of this once in a lifetime break."], ["original_language", "English"], ["release_date", "1976-11-21"], ["created_at", "2020-11-21 22:15:39.807871"], ["updated_at", "2020-11-21 22:15:39.807871"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mClubWatchlist Create (0.5ms)[0m  [1m[32mINSERT INTO "club_watchlists" ("club_id", "movie_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["club_id", 30], ["movie_id", 17], ["created_at", "2020-11-21 22:15:39.818454"], ["updated_at", "2020-11-21 22:15:39.818454"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mClubWatchlist Create (0.2ms)[0m  [1m[32mINSERT INTO "club_watchlists" ("club_id", "movie_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["club_id", 26], ["movie_id", 16], ["created_at", "2020-11-21 22:15:39.828737"], ["updated_at", "2020-11-21 22:15:39.828737"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mClubWatchlist Create (0.2ms)[0m  [1m[32mINSERT INTO "club_watchlists" ("club_id", "movie_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["club_id", 33], ["movie_id", 16], ["created_at", "2020-11-21 22:15:39.837388"], ["updated_at", "2020-11-21 22:15:39.837388"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mWatchlist Create (0.5ms)[0m  [1m[32mINSERT INTO "watchlists" ("user_id", "movie_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 63], ["movie_id", 16], ["created_at", "2020-11-21 22:15:39.849003"], ["updated_at", "2020-11-21 22:15:39.849003"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.4ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-10-04"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 26], ["created_at", "2020-11-21 22:15:39.862940"], ["updated_at", "2020-11-21 22:15:39.862940"], ["title", "meeting title"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.3ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-10-20"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 34], ["created_at", "2020-11-21 22:15:39.870695"], ["updated_at", "2020-11-21 22:15:39.870695"], ["title", "meeting title"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.2ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-09-25"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 27], ["created_at", "2020-11-21 22:15:39.877927"], ["updated_at", "2020-11-21 22:15:39.877927"], ["title", "meeting title"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.3ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-10-15"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 33], ["created_at", "2020-11-21 22:15:39.884214"], ["updated_at", "2020-11-21 22:15:39.884214"], ["title", "meeting title"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.2ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-10-14"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 34], ["created_at", "2020-11-21 22:15:39.892049"], ["updated_at", "2020-11-21 22:15:39.892049"], ["title", "meeting title"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.3ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-09-29"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 30], ["created_at", "2020-11-21 22:15:39.897554"], ["updated_at", "2020-11-21 22:15:39.897554"], ["title", "meeting title"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.5ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.3ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-09-25"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 33], ["created_at", "2020-11-21 22:15:39.905857"], ["updated_at", "2020-11-21 22:15:39.905857"], ["title", "meeting title"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.2ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-10-15"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 27], ["created_at", "2020-11-21 22:15:39.911378"], ["updated_at", "2020-11-21 22:15:39.911378"], ["title", "meeting title"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (1.7ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.5ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.2ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-10-10"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 35], ["created_at", "2020-11-21 22:15:39.919791"], ["updated_at", "2020-11-21 22:15:39.919791"], ["title", "meeting title"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mMeeting Create (0.2ms)[0m  [1m[32mINSERT INTO "meetings" ("date", "time", "link", "about", "excerpt", "club_id", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["date", "2020-09-28"], ["time", "16:20"], ["link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["about", "movie meeting"], ["excerpt", "meeting excerpt"], ["club_id", 27], ["created_at", "2020-11-21 22:15:39.926118"], ["updated_at", "2020-11-21 22:15:39.926118"], ["title", "meeting title"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mMovieMeeting Create (1.2ms)[0m  [1m[32mINSERT INTO "movie_meetings" ("movie_id", "meeting_id", "discussion", "watch_along", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["movie_id", 17], ["meeting_id", 31], ["discussion", false], ["watch_along", true], ["created_at", "2020-11-21 22:15:39.935147"], ["updated_at", "2020-11-21 22:15:39.935147"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mMovieMeeting Create (0.3ms)[0m  [1m[32mINSERT INTO "movie_meetings" ("movie_id", "meeting_id", "discussion", "watch_along", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["movie_id", 16], ["meeting_id", 30], ["discussion", false], ["watch_along", true], ["created_at", "2020-11-21 22:15:39.947133"], ["updated_at", "2020-11-21 22:15:39.947133"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mMovieMeeting Create (0.4ms)[0m  [1m[32mINSERT INTO "movie_meetings" ("movie_id", "meeting_id", "discussion", "watch_along", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["movie_id", 17], ["meeting_id", 27], ["discussion", false], ["watch_along", true], ["created_at", "2020-11-21 22:15:39.956440"], ["updated_at", "2020-11-21 22:15:39.956440"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.5ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 90], ["club_id", 34], ["created_at", "2020-11-21 22:15:39.966946"], ["updated_at", "2020-11-21 22:15:39.966946"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.2ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 65], ["club_id", 35], ["created_at", "2020-11-21 22:15:39.977876"], ["updated_at", "2020-11-21 22:15:39.977876"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.3ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 65], ["club_id", 33], ["created_at", "2020-11-21 22:15:39.987510"], ["updated_at", "2020-11-21 22:15:39.987510"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.2ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 85], ["club_id", 28], ["created_at", "2020-11-21 22:15:39.997069"], ["updated_at", "2020-11-21 22:15:39.997069"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.2ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 92], ["club_id", 35], ["created_at", "2020-11-21 22:15:40.006553"], ["updated_at", "2020-11-21 22:15:40.006553"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.2ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 63], ["club_id", 33], ["created_at", "2020-11-21 22:15:40.014566"], ["updated_at", "2020-11-21 22:15:40.014566"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.2ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 77], ["club_id", 33], ["created_at", "2020-11-21 22:15:40.023249"], ["updated_at", "2020-11-21 22:15:40.023249"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.4ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 89], ["club_id", 28], ["created_at", "2020-11-21 22:15:40.032835"], ["updated_at", "2020-11-21 22:15:40.032835"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.3ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 66], ["club_id", 28], ["created_at", "2020-11-21 22:15:40.041866"], ["updated_at", "2020-11-21 22:15:40.041866"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.3ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 90], ["club_id", 33], ["created_at", "2020-11-21 22:15:40.050898"], ["updated_at", "2020-11-21 22:15:40.050898"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.3ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 65], ["club_id", 30], ["created_at", "2020-11-21 22:15:40.059798"], ["updated_at", "2020-11-21 22:15:40.059798"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.3ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 65], ["club_id", 36], ["created_at", "2020-11-21 22:15:40.068573"], ["updated_at", "2020-11-21 22:15:40.068573"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.3ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 86], ["club_id", 29], ["created_at", "2020-11-21 22:15:40.094749"], ["updated_at", "2020-11-21 22:15:40.094749"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.3ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 67], ["club_id", 32], ["created_at", "2020-11-21 22:15:40.103109"], ["updated_at", "2020-11-21 22:15:40.103109"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.3ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 86], ["club_id", 28], ["created_at", "2020-11-21 22:15:40.111357"], ["updated_at", "2020-11-21 22:15:40.111357"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.3ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 79], ["club_id", 26], ["created_at", "2020-11-21 22:15:40.121076"], ["updated_at", "2020-11-21 22:15:40.121076"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.2ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 75], ["club_id", 35], ["created_at", "2020-11-21 22:15:40.129212"], ["updated_at", "2020-11-21 22:15:40.129212"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.2ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 69], ["club_id", 26], ["created_at", "2020-11-21 22:15:40.137849"], ["updated_at", "2020-11-21 22:15:40.137849"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.2ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 77], ["club_id", 27], ["created_at", "2020-11-21 22:15:40.145884"], ["updated_at", "2020-11-21 22:15:40.145884"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mClub Load (0.2ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mClub Load (0.1ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs" WHERE "clubs"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mUserClub Create (0.2ms)[0m  [1m[32mINSERT INTO "user_clubs" ("user_id", "club_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 63], ["club_id", 36], ["created_at", "2020-11-21 22:15:40.153217"], ["updated_at", "2020-11-21 22:15:40.153217"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m

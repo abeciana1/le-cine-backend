@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # require 'time'
+require 'faker'
+
 puts "deleting all"
 User.destroy_all
 Club.destroy_all
