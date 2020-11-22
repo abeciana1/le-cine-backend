@@ -18,7 +18,7 @@ Rails.application.routes.draw do
       post '/find-club-watchlist', to: 'club_watchlists#find_club_watchlist'
       # post '/search', to: 'movie_records#create'
       # post 'search', to: 'movierecords#create'
-      root '/'
+      root to: "user#index"
     end
   end
 
