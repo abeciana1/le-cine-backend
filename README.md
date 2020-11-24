@@ -1,25 +1,3 @@
-<h3>Table of Contents</h3>
-<dl>
-<dt>
-<a href="#le-cine">1. Le Cine</a>
-</dt>
-<dd>
-<a href="#tech-specs" style="marginLeft: 50px">1.a Tech Specs</a>
-</dd>
-<dd>
-<a href="#installation">1.b Installation Instructions</a>
-</dd>
-<dt>
-<a href="#why">2. Why?</a>
-</dt>
-<dt>
-<a href="database">3. Database Relationships</a>
-</dt>
-<dt>
-<a href="future-goals">4. Future Goals</a>
-</dt>
-</dl>
-
 <h1>Le Cine</h1>
 A film club management app to bring meaningful conversation and film lovers together under one roof.
 
