@@ -1,3 +1,5 @@
+<h3>Live project demo <a href="https://le-cine-frontend.herokuapp.com/" target="_blank" alt="Le Cine Demo">here</a></h3>
+
 <h1>Le Cine</h1>
 A film club management app to bring meaningful conversation and film lovers together under one roof.
 
