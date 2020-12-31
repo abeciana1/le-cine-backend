@@ -77,6 +77,6 @@ puts "user club"
     UserClub.create(club_id: Club.all.sample.id, user_id: User.all.sample.id)
 end
 
-puts "all seeded"
+puts "all  seeded"
 
 0
