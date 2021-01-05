@@ -1,7 +1,7 @@
-require "cloudinary"
+require "pry"
 
 class Api::V1::ClubsController < ApplicationController
-    skip_before_action :authorized, only: [:index, :create, :show, :update, :destroy]
+    skip_before_action :authorized, only: [:index, :create, :show, :update, :destroy, :find_by_name]
 
     def index
         clubs = Club.all
@@ -22,6 +22,10 @@ class Api::V1::ClubsController < ApplicationController
         end
     end
 
+    def find_by_name
+        club = Club.find_by(name: club_params["name"])
+        render :json => club, each_serializer: ClubSerializer
+    end
     
     def update
         club = Club.find(params[:id])

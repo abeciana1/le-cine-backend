@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       resources :clubs
       resources :user_clubs
       resources :users
+      post '/find-club-by-name', to: 'clubs#find_by_name'
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
       post '/find-club', to: 'user_clubs#find_user_club'
