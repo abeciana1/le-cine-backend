@@ -6,7 +6,8 @@ require 'pry'
 
 class Notification < ApplicationRecord
 
-    def send_sms(body)
+    def self.send_sms(body, media_url)
+        binding.pry
         account_sid = ENV['TWILIO_ACCOUNT_SID']
         auth_token = ENV['TWILIO_AUTH_TOKEN']
 
@@ -17,7 +18,7 @@ class Notification < ApplicationRecord
             message = @client.messages.create(
                 body: body,
                 from: '+13606376373',
-                media_url: ['https://c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg'],
+                media_url: media_url,
                 to: number
             )
             puts message.status

@@ -18,6 +18,7 @@ Rails.application.routes.draw do
       get '/profile', to: 'users#profile'
       post '/find-club', to: 'user_clubs#find_user_club'
       post '/find-club-watchlist', to: 'club_watchlists#find_club_watchlist'
+      post './alert-users', to: 'notifications#alert_users'
       # post '/search', to: 'movie_records#create'
       # post 'search', to: 'movierecords#create'
       
