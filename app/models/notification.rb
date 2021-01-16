@@ -6,7 +6,7 @@ require 'pry'
 
 class Notification < ApplicationRecord
 
-    def send_sms(body, media_url)
+    def self.send_sms(body, media_url)
         binding.pry
         account_sid = ENV['TWILIO_ACCOUNT_SID']
         auth_token = ENV['TWILIO_AUTH_TOKEN']
@@ -25,5 +25,3 @@ class Notification < ApplicationRecord
         end
     end
 end
-
-puts send_sms
