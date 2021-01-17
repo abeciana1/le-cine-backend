@@ -221,7 +221,7 @@ DEPENDENCIES
   io-console
   jwt (~> 2.1)
   listen (~> 3.2)
-  pg (>= 0.18, < 2.0)
+  pg (~> 1.2, >= 1.2.3)
   pry
   puma (~> 4.1)
   rack-cors

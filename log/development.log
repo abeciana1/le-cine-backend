@@ -1292,3 +1292,975 @@ Migrating to CreateNotifications (20210115221201)
   [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6455717514138254565)[0m
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/notify-cms" for ::1 at 2021-01-16 18:21:22 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2021-01-16 18:21:24 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 20:41:30 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 20:50:09 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 20:53:14 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/api/v1/notifications" for ::1 at 2021-01-16 20:53:59 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/api/v1/notifications" for ::1 at 2021-01-16 20:54:14 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/clubs" for ::1 at 2021-01-16 21:00:31 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2021-01-16 21:00:33 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/api/v1/notifications" for ::1 at 2021-01-16 21:07:59 -0500
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/clubs" for ::1 at 2021-01-16 21:16:26 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "le_cine_backend_development" does not exist
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2021-01-16 21:16:27 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "le_cine_backend_development" does not exist
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (208.5ms)[0m  [1m[35mCREATE DATABASE "le_cine_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (166.6ms)[0m  [1m[35mCREATE DATABASE "le_cine_backend_test" ENCODING = 'unicode'[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6455717514138254565)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20201006204754)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "birthday" character varying, "image" character varying, "password_digest" character varying, "admin" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006204754"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUserClubs (20201006204802)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "user_clubs" ("id" bigserial primary key, "user_id" integer, "club_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006204802"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateClubs (20201006204822)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "clubs" ("id" bigserial primary key, "name" character varying, "about" character varying, "city" character varying, "state" character varying, "country" character varying, "image" character varying, "member_count" integer, "memory_capacity" integer, "privacy" boolean, "host_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006204822"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateClubWatchlists (20201006204838)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "club_watchlists" ("id" bigserial primary key, "club_id" integer, "movie_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006204838"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWatchlists (20201006204848)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "watchlists" ("id" bigserial primary key, "user_id" integer, "movie_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006204848"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMovies (20201006204901)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "movies" ("id" bigserial primary key, "backdrop_image" character varying, "title" character varying, "poster" character varying, "genres" character varying, "tmdb_id" integer, "imdb_id" character varying, "trailer" character varying, "tagline" character varying, "plot" text, "runtime" integer, "language" character varying, "release_date" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006204901"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMovieMeetings (20201006204909)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "movie_meetings" ("id" bigserial primary key, "movie_id" integer, "meeting_id" integer, "discussion" boolean DEFAULT TRUE, "watch_along" boolean DEFAULT FALSE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006204909"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMeetings (20201006204916)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "meetings" ("id" bigserial primary key, "date" character varying, "time" character varying, "link" character varying, "about" text, "excerpt" character varying, "club_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006204916"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddEmailStringToUsers (20201006211040)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006211040"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddTitleStringToMeetings (20201006212739)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "meetings" ADD "title" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006212739"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDefaultValueToMeetingsExcerpt (20201007213051)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "meetings" ALTER COLUMN "excerpt" TYPE character varying, ALTER COLUMN "excerpt" SET DEFAULT ''[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201007213051"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDefaultValueToUsersAdmin (20201007213240)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ALTER COLUMN "admin" TYPE boolean, ALTER COLUMN "admin" SET DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201007213240"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDefaultValueToClubsPrivacy (20201007213329)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "clubs" ALTER COLUMN "privacy" TYPE boolean, ALTER COLUMN "privacy" SET DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201007213329"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMovieRecords (20201010002805)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "movie_records" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201010002805"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveUnwantedColumnsFromMovies (20201011020853)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "movies" DROP COLUMN "imdb_id"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "movies" DROP COLUMN "trailer"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "movies" DROP COLUMN "tagline"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "movies" DROP COLUMN "runtime"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201011020853"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveGenresColumnFromMovies (20201011023344)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "movies" DROP COLUMN "genres"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201011023344"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RenameColumnsInMovies (20201011023418)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "movies" RENAME COLUMN "backdrop_image" TO "backdrop_path"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "movies" RENAME COLUMN "poster" TO "poster_path"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "movies" RENAME COLUMN "plot" TO "overview"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "movies" RENAME COLUMN "language" TO "original_language"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "movies" RENAME COLUMN "tmdb_id" TO "mov_id"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201011023418"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RenameColumnMemoryCapacityClubs (20201013162841)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "clubs" RENAME COLUMN "memory_capacity" TO "member_capacity"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201013162841"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddSourceNameSourceUrlColumnsToMnovieMeetings (20201019145523)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "movie_meetings" ADD "source_name" character varying DEFAULT ''[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "movie_meetings" ADD "source_url" character varying DEFAULT ''[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201019145523"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20201115213325)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201115213325"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateNotifications (20210115221201)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "notifications" ("id" bigserial primary key, "body" text, "media_url" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210115221201"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-17 02:17:27.923508"], ["updated_at", "2021-01-17 02:17:27.923508"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6455717514138254565)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/clubs" for ::1 at 2021-01-16 21:17:54 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ClubsController#index as HTML
+  [1m[36mClub Load (0.8ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 53ms (Views: 13.2ms | ActiveRecord: 0.8ms | Allocations: 9850)
+
+
+Started GET "/api/v1/clubs" for ::1 at 2021-01-16 21:17:55 -0500
+Processing by Api::V1::ClubsController#index as */*
+  [1m[36mClub Load (0.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 845)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-01-16 21:17:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/api/v1/notifications" for ::1 at 2021-01-16 21:18:50 -0500
+Processing by Api::V1::NotificationsController#create as JSON
+  Parameters: {"body"=>"rails db:migrate\n", "media_url"=>["https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"], "notification"=>{"body"=>"rails db:migrate\n", "media_url"=>["https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"]}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 2.7ms | Allocations: 243)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: notifications
+Did you mean?  notification
+               action
+               controller
+               media_url):
+  
+app/controllers/api/v1/notifications_controller.rb:24:in `notification_params'
+app/controllers/api/v1/notifications_controller.rb:13:in `create'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:19:36 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>["https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"], "notification"=>{"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>["https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"]}}
+Completed 400 Bad Request in 78966ms (ActiveRecord: 0.0ms | Allocations: 37375)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: notifications
+Did you mean?  notification
+               action
+               controller
+               media_url):
+  
+app/controllers/api/v1/notifications_controller.rb:24:in `notification_params'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:21:09 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>["https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"], "notification"=>{"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>["https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"]}}
+[31mUnpermitted parameter: :media_url[0m
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:21:42 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "notification"=>{"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"}}
+Completed 500 Internal Server Error in 58185ms (ActiveRecord: 0.0ms | Allocations: 30940)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2)):
+  
+app/models/notification.rb:9:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:22:54 -0500
+Completed 500 Internal Server Error in 128601ms (ActiveRecord: 1.4ms | Allocations: 64612)
+
+
+  
+Errno::EIO (Input/output error @ io_writev - <STDOUT>):
+  
+app/controllers/api/v1/notifications_controller.rb:8:in `alert_users'
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "notification"=>{"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"}}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.3ms | Allocations: 5177)
+
+
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/models/notification.rb:10:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:23:45 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "notification"=>{"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"}}
+Completed 500 Internal Server Error in 60662ms (ActiveRecord: 1.9ms | Allocations: 82934)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21620 : Unable to create record
+Media urls:  are invalid. Please use only valid http and https urls
+https://www.twilio.com/docs/errors/21620
+
+):
+  
+app/models/notification.rb:18:in `block in send_sms'
+app/models/notification.rb:17:in `each'
+app/models/notification.rb:17:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:28:17 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"Testing Testing Test\nPFC 45 - Notification\nLe Choc Du Futur\nDjango", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"Testing Testing Test\nPFC 45 - Notification\nLe Choc Du Futur\nDjango", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 204 No Content in 338ms (ActiveRecord: 1.2ms | Allocations: 2824)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:30:11 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"testing\nle choc du future\n", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"testing\nle choc du future\n", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 204 No Content in 1805ms (ActiveRecord: 0.0ms | Allocations: 1727)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:30:52 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 204 No Content in 249ms (ActiveRecord: 0.0ms | Allocations: 1687)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:32:18 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"        .then(res => res.json())\n", "media_url"=>"        .then(res => res.json())", "notification"=>{"body"=>"        .then(res => res.json())\n", "media_url"=>"        .then(res => res.json())"}}
+Completed 500 Internal Server Error in 290ms (ActiveRecord: 2.4ms | Allocations: 1738)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21620 : Unable to create record
+Media urls:         .then(res => res.json()) are invalid. Please use only valid http and https urls
+https://www.twilio.com/docs/errors/21620
+
+):
+  
+app/models/notification.rb:21:in `block in send_sms'
+app/models/notification.rb:20:in `each'
+app/models/notification.rb:20:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:33:32 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"        .then(res => res.json())\n        .then(res => res.json())\n", "media_url"=>"", "notification"=>{"body"=>"        .then(res => res.json())\n        .then(res => res.json())\n", "media_url"=>""}}
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.0ms | Allocations: 1626)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21620 : Unable to create record
+Media urls:  are invalid. Please use only valid http and https urls
+https://www.twilio.com/docs/errors/21620
+
+):
+  
+app/models/notification.rb:21:in `block in send_sms'
+app/models/notification.rb:20:in `each'
+app/models/notification.rb:20:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:34:55 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"        .then(res => res.json())\n", "media_url"=>"", "notification"=>{"body"=>"        .then(res => res.json())\n", "media_url"=>""}}
+Completed 500 Internal Server Error in 323ms (ActiveRecord: 0.0ms | Allocations: 1575)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21620 : Unable to create record
+Media urls:  are invalid. Please use only valid http and https urls
+https://www.twilio.com/docs/errors/21620
+
+):
+  
+app/models/notification.rb:21:in `block in send_sms'
+app/models/notification.rb:20:in `each'
+app/models/notification.rb:20:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:36:41 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"        .then(res => res.json())\n", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "notification"=>{"body"=>"        .then(res => res.json())\n", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"}}
+Completed 204 No Content in 285ms (ActiveRecord: 9.8ms | Allocations: 1726)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:37:45 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"testing \nLe Choc Du Futur\nDjango", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"testing \nLe Choc Du Futur\nDjango", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 204 No Content in 312ms (ActiveRecord: 0.0ms | Allocations: 1710)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:38:43 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"Le Choc Du Futur\nDjango\nTest Notification", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "notification"=>{"body"=>"Le Choc Du Futur\nDjango\nTest Notification", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"}}
+Completed 204 No Content in 322ms (ActiveRecord: 0.0ms | Allocations: 1708)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-16 21:44:17 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"Groovy Tuesday", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "notification"=>{"body"=>"Groovy Tuesday", "media_url"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg"}}
+Completed 500 Internal Server Error in 528ms (ActiveRecord: 10.7ms | Allocations: 3115)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21608 : Unable to create record
+The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.
+https://www.twilio.com/docs/errors/21608
+
+):
+  
+app/models/notification.rb:22:in `block in send_sms'
+app/models/notification.rb:21:in `each'
+app/models/notification.rb:21:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
