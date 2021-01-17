@@ -23,7 +23,7 @@ puts "starting seed"
 puts "users"
 alex = User.create(first_name: "Alex", last_name: "Beciana", email: "alex@test.com", birthday: "1994-08-17", image: "https://avatars1.githubusercontent.com/u/36319554?s=400&u=492c8442f54f3c200317d6304f612f05f3b5b085&v=4", password: "1234", admin: true)
 30.times do
-    User.create(first_name: Faker::Name.unique.first_name, last_name: Faker::Name.unique.last_name, email: Faker::Internet.unique.email, birthday: Faker::Date.between('1985-09-23', '1996-09-25').to_s, image: Faker::Avatar.image, password: Faker::Internet.password, admin: false)
+    User.create(first_name: Faker::Name.unique.first_name, last_name: Faker::Name.unique.last_name, email: Faker::Internet.unique.email, birthday: Faker::Date.between(from:'1985-09-23', to:'1996-09-25').to_s, image: Faker::Avatar.image, password: Faker::Internet.password, admin: false)
 end
 
 puts "clubs"
@@ -64,7 +64,7 @@ Watchlist.create(user_id: alex.id, movie_id: Movie.all[1])
 
 puts "meeting"
 10.times do
-    Meeting.create(date: Faker::Date.between('2020-09-23', '2020-10-31'), time: Time.strptime("4:20 PM", "%I:%M %P").strftime("%H:%M"), link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", title: "meeting title", about: "movie meeting", excerpt: "meeting excerpt", club_id: Club.all.sample.id)
+    Meeting.create(date: Faker::Date.between(from: '2020-09-23', to:'2020-10-31'), time: Time.strptime("4:20 PM", "%I:%M %P").strftime("%H:%M"), link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", title: "meeting title", about: "movie meeting", excerpt: "meeting excerpt", club_id: Club.all.sample.id)
 end
 
 puts "movie meeting"

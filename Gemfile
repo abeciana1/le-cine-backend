@@ -30,7 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 gem 'pry'
-gem "faker", "~> 1.9"
+gem 'faker', '~> 2.15', '>= 2.15.1'
 gem "twilio-ruby"
 
 group :development, :test do
