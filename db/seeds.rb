@@ -9,14 +9,14 @@
 require 'faker'
 
 puts "deleting all"
-User.destroy_all
-Club.destroy_all
-Movie.destroy_all
-ClubWatchlist.destroy_all
-Watchlist.destroy_all
-Meeting.destroy_all
-MovieMeeting.destroy_all
-UserClub.destroy_all
+# User.destroy_all
+# Club.destroy_all
+# Movie.destroy_all
+# ClubWatchlist.destroy_all
+# Watchlist.destroy_all
+# Meeting.destroy_all
+# MovieMeeting.destroy_all
+# UserClub.destroy_all
 
 puts "starting seed"
 

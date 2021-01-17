@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :subscribers
   resources :movie_records
   namespace :api do
     namespace :v1 do
