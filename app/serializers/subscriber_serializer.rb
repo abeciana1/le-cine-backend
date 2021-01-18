@@ -1,3 +1,3 @@
 class SubscriberSerializer < ActiveModel::Serializer
-  attributes :id, :name, :email_address, :phone_number
+  attributes :id, :name, :email_address, :phone_number, :status
 end

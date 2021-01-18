@@ -2,7 +2,7 @@ class Api::V1::SubscribersController < ApplicationController
     skip_before_action :authorized, only: [:index, :create, :show]
 
     def index
-        subscriber = Subscriber.all
+        subscribers = Subscriber.all
         render :json => subscribers, each_serializer: SubscriberSerializer
     end
 
@@ -12,7 +12,6 @@ class Api::V1::SubscribersController < ApplicationController
     end
 
     def create
-        # binding.pry
         subscriber = Subscriber.create(subscriber_params)
         if subscriber.valid?
             render json: {subscriber: SubscriberSerializer.new(subscriber_params)}, status: :created
@@ -24,7 +23,7 @@ class Api::V1::SubscribersController < ApplicationController
     private
 
     def subscriber_params
-        params.require(:subscriber).permit(:name, :phone_number, :email_address)
+        params.require(:subscriber).permit(:name, :phone_number, :email_address, :status)
     end
 
 end
