@@ -7196,3 +7196,324 @@ Processing by Api::V1::SubscribersController#index as */*
 Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 1111)
 
 
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:49:03 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.5ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.92ms)
+Completed 200 OK in 88ms (Views: 83.1ms | ActiveRecord: 15.6ms | Allocations: 3207)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:55:02 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.7ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.59ms)
+Completed 200 OK in 74ms (Views: 68.2ms | ActiveRecord: 31.4ms | Allocations: 3207)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:00:50 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 8.6ms | Allocations: 3207)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:02:26 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (2.0ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.24ms)
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 2.0ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:02:31 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (2.1ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 51ms (Views: 45.3ms | ActiveRecord: 2.1ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:02:48 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.81ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:02:54 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (2.0ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.48ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 2.0ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:02:59 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.22ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:03:06 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.47ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:03:21 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.72ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:04:46 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.6ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.91ms)
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 1.6ms | Allocations: 1114)
+
+
+Started PATCH "/api/v1/subscribers/undefined" for ::1 at 2021-01-18 12:10:38 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"name"=>"Fak", "email_address"=>"fake@fake.com", "phone_number"=>"11234567890", "status"=>false, "id"=>"undefined", "subscriber"=>{"name"=>"Fak", "phone_number"=>"11234567890", "email_address"=>"fake@fake.com", "status"=>false}}
+  [1m[36mSubscriber Load (1.6ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+Completed 404 Not Found in 210ms (ActiveRecord: 10.6ms | Allocations: 4677)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Subscriber with 'id'=undefined):
+  
+app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+Started PATCH "/api/v1/subscribers/5" for ::1 at 2021-01-18 12:11:42 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"id"=>"5", "name"=>"Fake", "email_address"=>"fake@fake.com", "phone_number"=>"11234567890", "status"=>false, "subscriber"=>{"id"=>"5", "name"=>"Fake", "phone_number"=>"11234567890", "email_address"=>"fake@fake.com", "status"=>false}}
+  [1m[36mSubscriber Load (1.6ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+[31mUnpermitted parameter: :id[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mSubscriber Update (1.7ms)[0m  [1m[33mUPDATE "subscribers" SET "name" = $1, "updated_at" = $2 WHERE "subscribers"."id" = $3[0m  [["name", "Fake"], ["updated_at", "2021-01-18 17:11:42.791635"], ["id", 5]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+[active_model_serializers] Rendered SubscriberSerializer with ActiveModelSerializers::Adapter::Attributes (1.92ms)
+Completed 200 OK in 69ms (Views: 8.5ms | ActiveRecord: 4.7ms | Allocations: 2748)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:11:56 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.48ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:12:04 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.1ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.94ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.1ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:12:09 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.54ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:12:11 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.17ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:12:26 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.8ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.21ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.8ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:12:27 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.8ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.96ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.8ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:12:32 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.99ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 1112)
+
+
+Started PATCH "/api/v1/subscribers/6" for ::1 at 2021-01-18 12:12:38 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"id"=>"6", "name"=>"Alex B", "email_address"=>"alexb@test.com", "phone_number"=>"16313366416", "status"=>true, "subscriber"=>{"id"=>"6", "name"=>"Alex B", "phone_number"=>"16313366416", "email_address"=>"alexb@test.com", "status"=>true}}
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+[31mUnpermitted parameter: :id[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mSubscriber Update (1.3ms)[0m  [1m[33mUPDATE "subscribers" SET "name" = $1, "updated_at" = $2 WHERE "subscribers"."id" = $3[0m  [["name", "Alex B"], ["updated_at", "2021-01-18 17:12:38.990925"], ["id", 6]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+[active_model_serializers] Rendered SubscriberSerializer with ActiveModelSerializers::Adapter::Attributes (0.59ms)
+Completed 200 OK in 42ms (Views: 10.3ms | ActiveRecord: 2.1ms | Allocations: 2444)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:14:02 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.9ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.9ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:14:31 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.71ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 1114)
+
+
+Started PATCH "/api/v1/subscribers/5" for ::1 at 2021-01-18 12:14:33 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"name"=>"Fake", "email_address"=>"fake@fake.com", "phone_number"=>"11234567890", "status"=>true, "id"=>"5", "subscriber"=>{"name"=>"Fake", "phone_number"=>"11234567890", "email_address"=>"fake@fake.com", "status"=>true}}
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mSubscriber Update (0.4ms)[0m  [1m[33mUPDATE "subscribers" SET "updated_at" = $1, "status" = $2 WHERE "subscribers"."id" = $3[0m  [["updated_at", "2021-01-18 17:14:33.146760"], ["status", true], ["id", 5]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+[active_model_serializers] Rendered SubscriberSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 1.3ms | Allocations: 2419)
+
+
+Started PATCH "/api/v1/subscribers/5" for ::1 at 2021-01-18 12:14:33 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"name"=>"Fake", "email_address"=>"fake@fake.com", "phone_number"=>"11234567890", "status"=>false, "id"=>"5", "subscriber"=>{"name"=>"Fake", "phone_number"=>"11234567890", "email_address"=>"fake@fake.com", "status"=>false}}
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mSubscriber Update (0.3ms)[0m  [1m[33mUPDATE "subscribers" SET "updated_at" = $1, "status" = $2 WHERE "subscribers"."id" = $3[0m  [["updated_at", "2021-01-18 17:14:33.949006"], ["status", false], ["id", 5]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+[active_model_serializers] Rendered SubscriberSerializer with ActiveModelSerializers::Adapter::Attributes (1.62ms)
+Completed 200 OK in 22ms (Views: 2.2ms | ActiveRecord: 1.0ms | Allocations: 2413)
+
+
+Started PATCH "/api/v1/subscribers/6" for ::1 at 2021-01-18 12:14:34 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"name"=>"Alex B", "email_address"=>"alexb@test.com", "phone_number"=>"16313366416", "status"=>false, "id"=>"6", "subscriber"=>{"name"=>"Alex B", "phone_number"=>"16313366416", "email_address"=>"alexb@test.com", "status"=>false}}
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mSubscriber Update (0.9ms)[0m  [1m[33mUPDATE "subscribers" SET "updated_at" = $1, "status" = $2 WHERE "subscribers"."id" = $3[0m  [["updated_at", "2021-01-18 17:14:34.958272"], ["status", false], ["id", 6]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+[active_model_serializers] Rendered SubscriberSerializer with ActiveModelSerializers::Adapter::Attributes (0.99ms)
+Completed 200 OK in 18ms (Views: 1.5ms | ActiveRecord: 2.0ms | Allocations: 2412)
+
+
+Started PATCH "/api/v1/subscribers/6" for ::1 at 2021-01-18 12:14:49 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"name"=>"Alex B", "email_address"=>"alexb@test.com", "phone_number"=>"16313366416", "status"=>true, "id"=>"6", "subscriber"=>{"name"=>"Alex B", "phone_number"=>"16313366416", "email_address"=>"alexb@test.com", "status"=>true}}
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mSubscriber Update (0.4ms)[0m  [1m[33mUPDATE "subscribers" SET "updated_at" = $1, "status" = $2 WHERE "subscribers"."id" = $3[0m  [["updated_at", "2021-01-18 17:14:49.024084"], ["status", true], ["id", 6]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+[active_model_serializers] Rendered SubscriberSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 14ms (Views: 1.0ms | ActiveRecord: 1.3ms | Allocations: 2411)
+
+
+Started PATCH "/api/v1/subscribers/5" for ::1 at 2021-01-18 12:14:54 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"id"=>"5", "name"=>"Fake Person", "email_address"=>"fake@fake.com", "phone_number"=>"11234567890", "status"=>false, "subscriber"=>{"id"=>"5", "name"=>"Fake Person", "phone_number"=>"11234567890", "email_address"=>"fake@fake.com", "status"=>false}}
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+[31mUnpermitted parameter: :id[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mSubscriber Update (0.3ms)[0m  [1m[33mUPDATE "subscribers" SET "name" = $1, "updated_at" = $2 WHERE "subscribers"."id" = $3[0m  [["name", "Fake Person"], ["updated_at", "2021-01-18 17:14:54.904531"], ["id", 5]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:27:in `update'
+[active_model_serializers] Rendered SubscriberSerializer with ActiveModelSerializers::Adapter::Attributes (1.62ms)
+Completed 200 OK in 12ms (Views: 2.2ms | ActiveRecord: 1.1ms | Allocations: 2444)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:16:59 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.1ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.66ms)
+Completed 200 OK in 65ms (Views: 34.2ms | ActiveRecord: 19.2ms | Allocations: 5162)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:17:04 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.05ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 12:17:09 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.69ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started POST "/api/v1/subscribers" for ::1 at 2021-01-18 12:20:06 -0500
+Processing by Api::V1::SubscribersController#create as JSON
+  Parameters: {"name"=>"Alex", "email_address"=>"alex@test.com", "phone_number"=>"16311387687", "status"=>true, "subscriber"=>{"name"=>"Alex", "phone_number"=>"16311387687", "email_address"=>"alex@test.com", "status"=>true}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:17:in `create'
+  [1m[36mSubscriber Create (3.2ms)[0m  [1m[32mINSERT INTO "subscribers" ("name", "phone_number", "email_address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alex"], ["phone_number", "16311387687"], ["email_address", "alex@test.com"], ["created_at", "2021-01-18 17:20:06.693213"], ["updated_at", "2021-01-18 17:20:06.693213"]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:17:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (14.1ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 4.5ms | Allocations: 2956)
+
+
+  
+NoMethodError (undefined method `read_attribute_for_serialization' for #<ActionController::Parameters {"name"=>"Alex", "phone_number"=>"16311387687", "email_address"=>"alex@test.com", "status"=>true} permitted: true>):
+  
+app/controllers/api/v1/subscribers_controller.rb:19:in `create'
