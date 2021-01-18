@@ -6,18 +6,18 @@ require 'pry'
 
 class Notification < ApplicationRecord
 
-    @@account_sid = ENV['TWILIO_ACCOUNT_SID']
-    @@auth_token = ENV['TWILIO_AUTH_TOKEN']
+    # @@account_sid = ENV['TWILIO_ACCOUNT_SID']
+    # @@auth_token = ENV['TWILIO_AUTH_TOKEN']
 
     def self.send_sms(body, media_url)
 
         media_arr = media_url.split(',')
 
         # binding.pry
-        # account_sid = ENV['TWILIO_ACCOUNT_SID']
-        # auth_token = ENV['TWILIO_AUTH_TOKEN']
+        account_sid = ENV['TWILIO_ACCOUNT_SID']
+        auth_token = ENV['TWILIO_AUTH_TOKEN']
 
-        @client = Twilio::REST::Client.new(@@account_sid, @@auth_token)
+        @client = Twilio::REST::Client.new(account_sid, auth_token)
 
         #! create if statement - if media_arr is empty use send out without media_url key
         numbers_to_message = Subscriber.all
@@ -49,6 +49,8 @@ class Notification < ApplicationRecord
     end
 
     def self.welcome(subscriber)
+        account_sid = ENV['TWILIO_ACCOUNT_SID']
+        auth_token = ENV['TWILIO_AUTH_TOKEN']
         # binding.pry
         @client = Twilio::REST::Client.new(@@account_sid, @@auth_token)
 

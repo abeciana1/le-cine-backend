@@ -7517,3 +7517,8 @@ Completed 500 Internal Server Error in 65ms (ActiveRecord: 4.5ms | Allocations: 
 NoMethodError (undefined method `read_attribute_for_serialization' for #<ActionController::Parameters {"name"=>"Alex", "phone_number"=>"16311387687", "email_address"=>"alex@test.com", "status"=>true} permitted: true>):
   
 app/controllers/api/v1/subscribers_controller.rb:19:in `create'
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6455717514138254565)[0m
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6455717514138254565)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
