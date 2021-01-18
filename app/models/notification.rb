@@ -55,7 +55,7 @@ class Notification < ApplicationRecord
         f_name = subscriber.name.split(" ")[0]
 
         message = @client.messages.create(
-                    body: `Hey #{f_name}, welcome to Pandemic Film Club! Each week you can text "pfc" (no case sensitivity) to find out the discussion and watchalong films. Also, feel free to check out http://localhost:3000/pandemic-film-club for more info on the films.`,
+                    body: "Hey, welcome to Pandemic Film Club! Each week you can text "pfc" (no case sensitivity) to find out the discussion and watchalong films. Also, feel free to check out http://localhost:3000/pandemic-film-club for more info on the films.",
                     from: '+19177468440',
                     to: subscriber["phone_number"]
                 )
