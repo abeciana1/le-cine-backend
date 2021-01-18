@@ -1,5 +1,7 @@
+require 'pry'
+
 class Api::V1::SubscribersController < ApplicationController
-    skip_before_action :authorized, only: [:index, :create, :show]
+    skip_before_action :authorized, only: [:index, :create, :show, :update, :destroy]
 
     def index
         subscribers = Subscriber.all
@@ -18,6 +20,19 @@ class Api::V1::SubscribersController < ApplicationController
         else
             render json: { error: 'failed to become subscriber'}, status: :not_acceptable
         end
+    end
+
+    def update
+        subscriber = Subscriber.find(params[:id])
+        # binding.pry
+        subscriber.update(subscriber_params)
+        render :json => subscriber, each_serializer: SubscriberSerializer
+    end
+    
+    def delete
+        subscriber = Subscriber.find(params[:id])
+        subscriber.destroy
+        render json: {}
     end
 
     private
