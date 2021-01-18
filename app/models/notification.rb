@@ -57,7 +57,6 @@ class Notification < ApplicationRecord
         message = @client.messages.create(
                     body: `Hey #{f_name}, welcome to Pandemic Film Club! Each week you can text "pfc" (no case sensitivity) to find out the discussion and watchalong films. Also, feel free to check out http://localhost:3000/pandemic-film-club for more info on the films.`,
                     from: '+19177468440',
-                    media_url: media_arr,
                     to: subscriber["phone_number"]
                 )
     end
