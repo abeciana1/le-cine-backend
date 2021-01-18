@@ -6366,3 +6366,833 @@ Processing by Api::V1::SubscribersController#index as */*
 Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 2.3ms | Allocations: 963)
 
 
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:20:02 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:27: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+...== 1 && media_arr[0].include? "http" 
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:34: else without rescue is useless
+            else
+            ^~~~
+):
+  
+app/models/notification.rb:27: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:34: else without rescue is useless
+app/models/notification.rb:27: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:34: else without rescue is useless
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:21:13 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:28: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+...== 1 && media_arr[0].include? "http" 
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:35: else without rescue is useless
+            else
+            ^~~~
+):
+  
+app/models/notification.rb:28: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:35: else without rescue is useless
+app/models/notification.rb:28: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:35: else without rescue is useless
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:21:46 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (3.6ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.78ms)
+Completed 200 OK in 148ms (Views: 131.9ms | ActiveRecord: 64.1ms | Allocations: 6790)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:22:03 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:28: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+...== 1 && media_arr[0].include? "http" 
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:35: else without rescue is useless
+            else
+            ^~~~
+):
+  
+app/models/notification.rb:28: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:35: else without rescue is useless
+app/models/notification.rb:28: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:35: else without rescue is useless
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:22:36 -0500
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.9ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.79ms)
+Completed 200 OK in 33ms (Views: 16.6ms | ActiveRecord: 10.2ms | Allocations: 7087)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:22:44 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:60: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/notification.rb:60: syntax error, unexpected `end', expecting end-of-input
+app/models/notification.rb:60: syntax error, unexpected `end', expecting end-of-input
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:23:53 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 200 OK in 17ms (Views: 9.6ms | ActiveRecord: 3.9ms | Allocations: 4885)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:24:02 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:60: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/notification.rb:60: syntax error, unexpected `end', expecting end-of-input
+app/models/notification.rb:60: syntax error, unexpected `end', expecting end-of-input
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:24:20 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.85ms)
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 5.1ms | Allocations: 4875)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:24:34 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"testing again", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,x, ", "notification"=>{"body"=>"testing again", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,x, "}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.8ms | Allocations: 4058)
+
+
+  
+NoMethodError (undefined method `check_media_url' for Notification:Class):
+  
+app/models/notification.rb:23:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:25:08 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 18ms (Views: 10.1ms | ActiveRecord: 4.6ms | Allocations: 4940)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:25:18 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"testing again", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,x, ", "notification"=>{"body"=>"testing again", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,x, "}}
+Completed 500 Internal Server Error in 308137ms (ActiveRecord: 1.5ms | Allocations: 46873)
+
+
+  
+EOFError (end of file reached):
+  
+app/models/notification.rb:51:in `block in check_media_url'
+app/models/notification.rb:47:in `map'
+app/models/notification.rb:47:in `check_media_url'
+app/models/notification.rb:23:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:31:30 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.1ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.5ms)
+Completed 200 OK in 41ms (Views: 20.0ms | ActiveRecord: 13.6ms | Allocations: 4880)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:31:52 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"testing", "media_url"=>"1234,Faraday.head(the_url).status == 200,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"testing", "media_url"=>"1234,Faraday.head(the_url).status == 200,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 7.0ms | Allocations: 1007)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:49:in `block in check_media_url'
+app/models/notification.rb:48:in `map'
+app/models/notification.rb:48:in `check_media_url'
+app/models/notification.rb:24:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:32:06 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.06ms)
+Completed 200 OK in 19ms (Views: 9.0ms | ActiveRecord: 6.0ms | Allocations: 4924)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:32:22 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"testing", "media_url"=>"q234, ,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"testing", "media_url"=>"q234, ,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 291640ms (ActiveRecord: 1.1ms | Allocations: 42955)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:50:in `block in check_media_url'
+app/models/notification.rb:48:in `map'
+app/models/notification.rb:48:in `check_media_url'
+app/models/notification.rb:24:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:37:23 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (3.0ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.2ms)
+Completed 200 OK in 55ms (Views: 24.0ms | ActiveRecord: 22.5ms | Allocations: 4864)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:37:43 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"tessting", "media_url"=>"res = Net::HTTP.get_response(URI('http://www.example.com/index.html'))   puts res.code # -> '200',https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"tessting", "media_url"=>"res = Net::HTTP.get_response(URI('http://www.example.com/index.html'))   puts res.code # -> '200',https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 27931ms (ActiveRecord: 9.8ms | Allocations: 12239)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): "res = Net::HTTP.get_response(URI('http://www.example.com/index.html'))   puts res.code # -> '200'"):
+  
+app/models/notification.rb:51:in `block in check_media_url'
+app/models/notification.rb:49:in `map'
+app/models/notification.rb:49:in `check_media_url'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:38:15 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.9ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.9ms | Allocations: 965)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:38:29 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"res = Net::HTTP.get_response(URI(media_url))", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"res = Net::HTTP.get_response(URI(media_url))", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 56879ms (ActiveRecord: 0.0ms | Allocations: 80447)
+
+
+  
+NameError (undefined local variable or method `arr' for Notification:Class
+Did you mean?  Array):
+  
+app/models/notification.rb:60:in `check_media_url'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:40:01 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"lsdihga", "media_url"=>"blank,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"lsdihga", "media_url"=>"blank,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 6.2ms | Allocations: 373)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:50:in `block in check_media_url'
+app/models/notification.rb:49:in `map'
+app/models/notification.rb:49:in `check_media_url'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:40:27 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.7ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.15ms)
+Completed 200 OK in 48ms (Views: 36.5ms | ActiveRecord: 4.6ms | Allocations: 7087)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:40:36 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"blank", "media_url"=>"kladjvba,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"blank", "media_url"=>"kladjvba,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.2ms | Allocations: 492)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:50:in `block in check_media_url'
+app/models/notification.rb:49:in `map'
+app/models/notification.rb:49:in `check_media_url'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:41:16 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 17ms (Views: 10.2ms | ActiveRecord: 4.0ms | Allocations: 4935)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:41:23 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"daslgknad", "media_url"=>"lasjdbn,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"daslgknad", "media_url"=>"lasjdbn,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.7ms | Allocations: 363)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:50:in `block in check_media_url'
+app/models/notification.rb:49:in `map'
+app/models/notification.rb:49:in `check_media_url'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:42:27 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 200 OK in 17ms (Views: 8.5ms | ActiveRecord: 3.8ms | Allocations: 4875)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:42:35 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"asdkgjabd", "media_url"=>"iunoin,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"asdkgjabd", "media_url"=>"iunoin,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.3ms | Allocations: 362)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:50:in `block in check_media_url'
+app/models/notification.rb:49:in `map'
+app/models/notification.rb:49:in `check_media_url'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:43:14 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.81ms)
+Completed 200 OK in 20ms (Views: 10.0ms | ActiveRecord: 3.3ms | Allocations: 4868)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:43:21 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"aldjbg", "media_url"=>"lknm,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"aldjbg", "media_url"=>"lknm,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.8ms | Allocations: 362)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:50:in `block in check_media_url'
+app/models/notification.rb:49:in `map'
+app/models/notification.rb:49:in `check_media_url'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:44:59 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"        self.check_media_url(media_arr)\n", "media_url"=>"https://www.sfjazz.org/globalassets/discover/blog/blog-images/5050s/djangocolor_5050.jpg", "notification"=>{"body"=>"        self.check_media_url(media_arr)\n", "media_url"=>"https://www.sfjazz.org/globalassets/discover/blog/blog-images/5050s/djangocolor_5050.jpg"}}
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:45:42 -0500
+Completed 204 No Content in 46613ms (ActiveRecord: 1.7ms | Allocations: 25529)
+
+
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"        self.check_media_url(media_arr)\n", "media_url"=>"x,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"        self.check_media_url(media_arr)\n", "media_url"=>"x,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.1ms | Allocations: 371)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:60:in `block in check_media_url'
+app/models/notification.rb:60:in `map'
+app/models/notification.rb:60:in `check_media_url'
+app/models/notification.rb:26:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:45:49 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.35ms)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 3.8ms | Allocations: 4673)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:46:00 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,x,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "media_url"=>"https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,x,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.0ms | Allocations: 1680)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:60:in `block in check_media_url'
+app/models/notification.rb:60:in `map'
+app/models/notification.rb:60:in `check_media_url'
+app/models/notification.rb:26:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:46:48 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 22ms (Views: 11.7ms | ActiveRecord: 6.5ms | Allocations: 4869)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:47:05 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"Net::HTTP.get_response(URI(media_url)).code", "media_url"=>"test,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,test,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg", "notification"=>{"body"=>"Net::HTTP.get_response(URI(media_url)).code", "media_url"=>"test,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg,test,https://m.media-amazon.com/images/M/MV5BMTk1NGNiNTYtODZjNy00NjRhLThlNjctYjc4MTdjYmUwYjM4XkEyXkFqcGdeQXVyNzMxNjczMTc@._V1_.jpg"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 3.0ms | Allocations: 364)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/models/notification.rb:60:in `block in check_media_url'
+app/models/notification.rb:60:in `map'
+app/models/notification.rb:60:in `check_media_url'
+app/models/notification.rb:26:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:54:40 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+...== 1 && media_arr[0].include? "http" 
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:38: else without rescue is useless
+            else
+            ^~~~
+):
+  
+app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:38: else without rescue is useless
+app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:38: else without rescue is useless
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:56:09 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+...= 1 && !media_arr[0].include? "http" 
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:38: else without rescue is useless
+            else
+            ^~~~
+):
+  
+app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:38: else without rescue is useless
+app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:38: else without rescue is useless
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:56:33 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.6ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.66ms)
+Completed 200 OK in 46ms (Views: 37.2ms | ActiveRecord: 10.8ms | Allocations: 6790)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:56:41 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+...= 1 && !media_arr[0].include? "http" 
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:38: else without rescue is useless
+            else
+            ^~~~
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:70: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:38: else without rescue is useless
+app/models/notification.rb:70: syntax error, unexpected `end', expecting end-of-input
+app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:38: else without rescue is useless
+app/models/notification.rb:70: syntax error, unexpected `end', expecting end-of-input
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:58:25 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.8ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.84ms)
+Completed 200 OK in 38ms (Views: 15.4ms | ActiveRecord: 16.5ms | Allocations: 4903)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 10:58:37 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+...ty? || !media_arr[0].include? "http" 
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:38: else without rescue is useless
+            else
+            ^~~~
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:70: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:38: else without rescue is useless
+app/models/notification.rb:70: syntax error, unexpected `end', expecting end-of-input
+app/models/notification.rb:31: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:38: else without rescue is useless
+app/models/notification.rb:70: syntax error, unexpected `end', expecting end-of-input
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:04:14 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:25: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+...ty? || !media_arr[0].include? "http" || !media_arr[0].includ...
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:25: syntax error, unexpected string literal, expecting `end'
+...tp" || !media_arr[0].include? "https"
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:33: else without rescue is useless
+        else
+        ^~~~
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:76: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/notification.rb:25: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+app/models/notification.rb:25: syntax error, unexpected string literal, expecting `end'
+app/models/notification.rb:33: else without rescue is useless
+app/models/notification.rb:76: syntax error, unexpected `end', expecting end-of-input
+app/models/notification.rb:25: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+app/models/notification.rb:25: syntax error, unexpected string literal, expecting `end'
+app/models/notification.rb:33: else without rescue is useless
+app/models/notification.rb:76: syntax error, unexpected `end', expecting end-of-input
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:07:33 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:33: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+...= 1 && !media_arr[0].include? "http" || !media_arr[0].includ...
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:33: syntax error, unexpected string literal, expecting `end'
+...tp" || !media_arr[0].include? "https"
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:41: else without rescue is useless
+        else
+        ^~~~
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:56: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `end'
+app/models/notification.rb:41: else without rescue is useless
+app/models/notification.rb:56: syntax error, unexpected `end', expecting end-of-input
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `end'
+app/models/notification.rb:41: else without rescue is useless
+app/models/notification.rb:56: syntax error, unexpected `end', expecting end-of-input
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:08:16 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:33: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+...== 1 && !media_arr[0].include?"http" || !media_arr[0].includ...
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:33: syntax error, unexpected string literal, expecting `end'
+...ttp" || !media_arr[0].include?"https"
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:41: else without rescue is useless
+        else
+        ^~~~
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:56: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `end'
+app/models/notification.rb:41: else without rescue is useless
+app/models/notification.rb:56: syntax error, unexpected `end', expecting end-of-input
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `end'
+app/models/notification.rb:41: else without rescue is useless
+app/models/notification.rb:56: syntax error, unexpected `end', expecting end-of-input
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:08:51 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:33: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+...== 1 && !media_arr[0].include?"http" || !media_arr[0].includ...
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:33: syntax error, unexpected string literal, expecting `end'
+...ttp" || !media_arr[0].include?"https"
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:41: else without rescue is useless
+        else
+        ^~~~
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:50: syntax error, unexpected `rescue', expecting `end'
+        rescue
+        ^~~~~~
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:58: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `end'
+app/models/notification.rb:41: else without rescue is useless
+app/models/notification.rb:50: syntax error, unexpected `rescue', expecting `end'
+app/models/notification.rb:58: syntax error, unexpected `end', expecting end-of-input
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+app/models/notification.rb:33: syntax error, unexpected string literal, expecting `end'
+app/models/notification.rb:41: else without rescue is useless
+app/models/notification.rb:50: syntax error, unexpected `rescue', expecting `end'
+app/models/notification.rb:58: syntax error, unexpected `end', expecting end-of-input
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:11:12 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>"", "notification"=>{"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>""}}
+Completed 500 Internal Server Error in 9615ms (ActiveRecord: 2.6ms | Allocations: 31067)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21604 : Unable to create record
+A 'To' phone number is required.
+https://www.twilio.com/docs/errors/21604
+
+):
+  
+app/models/notification.rb:26:in `block in send_sms'
+app/models/notification.rb:24:in `each'
+app/models/notification.rb:24:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:11:58 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>"", "notification"=>{"body"=>"https://images-na.ssl-images-amazon.com/images/I/81Lr8QcBAXL._SL1500_.jpg", "media_url"=>""}}
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 1.5ms | Allocations: 1628)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21620 : Unable to create record
+Media urls:  are invalid. Please use only valid http and https urls
+https://www.twilio.com/docs/errors/21620
+
+):
+  
+app/models/notification.rb:26:in `block in send_sms'
+app/models/notification.rb:24:in `each'
+app/models/notification.rb:24:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:13:51 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>"", "notification"=>{"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>""}}
+Completed 204 No Content in 320ms (ActiveRecord: 1.5ms | Allocations: 1811)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:15:57 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:25: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+...empty? || !media_arr.include? "http"
+...                              ^
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:31: else without rescue is useless
+            else
+            ^~~~
+/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:46: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/notification.rb:25: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:31: else without rescue is useless
+app/models/notification.rb:46: syntax error, unexpected `end', expecting end-of-input
+app/models/notification.rb:25: syntax error, unexpected string literal, expecting `then' or ';' or '\n'
+app/models/notification.rb:31: else without rescue is useless
+app/models/notification.rb:46: syntax error, unexpected `end', expecting end-of-input
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:16:39 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"                message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    to: subscriber\n                )", "media_url"=>"", "notification"=>{"body"=>"                message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    to: subscriber\n                )", "media_url"=>""}}
+Completed 204 No Content in 361ms (ActiveRecord: 2.1ms | Allocations: 1733)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:17:39 -0500
+  
+SyntaxError (/Users/alexbeciana/Development/code/le-cine-backend/app/models/notification.rb:32: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+...     when !media_arr.include? "http"
+...                              ^
+):
+  
+app/models/notification.rb:32: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+app/models/notification.rb:32: syntax error, unexpected string literal, expecting `then' or ',' or ';' or '\n'
+Started POST "/api/v1/subscribers" for ::1 at 2021-01-18 11:20:20 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SubscribersController#create as JSON
+  Parameters: {"name"=>"Alex", "email_address"=>"alexb@test.com", "phone_number"=>"16313366416", "status"=>true, "subscriber"=>{"name"=>"Alex", "phone_number"=>"16313366416", "email_address"=>"alexb@test.com", "status"=>true}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:17:in `create'
+  [1m[36mSubscriber Create (7.5ms)[0m  [1m[32mINSERT INTO "subscribers" ("name", "phone_number", "email_address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alex"], ["phone_number", "16313366416"], ["email_address", "alexb@test.com"], ["created_at", "2021-01-18 16:20:20.449536"], ["updated_at", "2021-01-18 16:20:20.449536"]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:17:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.92ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 14.9ms | Allocations: 8463)
+
+
+  
+NoMethodError (undefined method `read_attribute_for_serialization' for #<ActionController::Parameters {"name"=>"Alex", "phone_number"=>"16313366416", "email_address"=>"alexb@test.com", "status"=>true} permitted: true>):
+  
+app/controllers/api/v1/subscribers_controller.rb:19:in `create'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:20:24 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.7ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.81ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.7ms | Allocations: 1464)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:20:47 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"welcome", "media_url"=>"", "notification"=>{"body"=>"welcome", "media_url"=>""}}
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/models/notification.rb:21:in `send_sms'
+Completed 204 No Content in 199867ms (ActiveRecord: 1.7ms | Allocations: 134158)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:24:22 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>"", "notification"=>{"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>""}}
+  [1m[36mSubscriber Load (0.9ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/models/notification.rb:21:in `filter'
+Completed 500 Internal Server Error in 20598ms (ActiveRecord: 5.7ms | Allocations: 23360)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21211 : Unable to create record
+The 'To' number #<Subscriber:0x00007fdf30751810> is not a valid phone number.
+https://www.twilio.com/docs/errors/21211
+
+):
+  
+app/models/notification.rb:27:in `block in send_sms'
+app/models/notification.rb:25:in `each'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:24:55 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>"", "notification"=>{"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>""}}
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/models/notification.rb:21:in `filter'
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 5.9ms | Allocations: 5568)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21211 : Unable to create record
+The 'To' number #<Subscriber:0x00007fdf3794bce0> is not a valid phone number.
+https://www.twilio.com/docs/errors/21211
+
+):
+  
+app/models/notification.rb:27:in `block in send_sms'
+app/models/notification.rb:25:in `each'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:25:33 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>"", "notification"=>{"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>""}}
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/models/notification.rb:21:in `send_sms'
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 3.5ms | Allocations: 5568)
+
+
+  
+Twilio::REST::RestError ([HTTP 400] 21211 : Unable to create record
+The 'To' number #<Subscriber:0x00007fdf31840720> is not a valid phone number.
+https://www.twilio.com/docs/errors/21211
+
+):
+  
+app/models/notification.rb:27:in `block in send_sms'
+app/models/notification.rb:25:in `each'
+app/models/notification.rb:25:in `send_sms'
+app/controllers/api/v1/notifications_controller.rb:9:in `alert_users'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-18 11:26:00 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>"", "notification"=>{"body"=>"message = @client.messages.create(\n                    body: body,\n                    from: '+19177468440',\n                    media_url: media_arr,\n                    to: subscriber\n                )", "media_url"=>""}}
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/models/notification.rb:21:in `send_sms'
+Completed 204 No Content in 249ms (ActiveRecord: 2.7ms | Allocations: 5636)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:37:30 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.29ms)
+Completed 200 OK in 78ms (Views: 67.2ms | ActiveRecord: 12.2ms | Allocations: 6883)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:37:59 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.7ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 1.7ms | Allocations: 1112)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:38:27 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.5ms | Allocations: 1112)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:38:59 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.8ms)
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:39:05 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.8ms)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:39:16 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.4ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:39:49 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:40:05 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.59ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.5ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:40:31 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:40:37 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.04ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:41:20 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:41:20 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.8ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:41:30 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.06ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:41:41 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.8ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.31ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.8ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 11:41:45 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.08ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 1111)
+
+

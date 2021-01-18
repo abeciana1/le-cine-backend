@@ -17,25 +17,30 @@ class Notification < ApplicationRecord
         @client = Twilio::REST::Client.new(account_sid, auth_token)
 
         #! create if statement - if media_arr is empty use send out without media_url key
-
-        
-
         numbers_to_message = Subscriber.all
-        numbers_to_message.each do |subscriber|
-            if media_arr.empty? || media_arr.length == 1 && media_arr[0].include? "http" 
-                binding.pry
+        subscribed = numbers_to_message.select { |subscriber| subscriber.status == true}
+        
+        subscribed.each do |subscriber|
+            if media_arr.empty?
                 message = @client.messages.create(
-                body: body,
-                from: '+19177468440',
-                to: subscriber["phone_number"]
-            )
+                    body: body,
+                    from: '+19177468440',
+                    to: subscriber["phone_number"]
+                )
+            elsif !media_arr.include? "http"
+                message = @client.messages.create(
+                    body: body,
+                    from: '+19177468440',
+                    to: subscriber["phone_number"]
+                )
             else
-            message = @client.messages.create(
-                body: body,
-                from: '+19177468440',
-                media_url: media_arr,
-                to: subscriber["phone_number"]
-            )
+                message = @client.messages.create(
+                    body: body,
+                    from: '+19177468440',
+                    media_url: media_arr,
+                    to: subscriber["phone_number"]
+                )
+            end
             puts message.status
         end
     end
