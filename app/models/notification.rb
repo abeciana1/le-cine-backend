@@ -49,7 +49,7 @@ class Notification < ApplicationRecord
     end
 
     def self.welcome(subscriber)
-        binding.pry
+        # binding.pry
         @client = Twilio::REST::Client.new(@@account_sid, @@auth_token)
 
         f_name = subscriber.name.split(" ")[0]
