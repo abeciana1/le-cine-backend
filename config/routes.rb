@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :subscribers
+
   resources :movie_records
   namespace :api do
     namespace :v1 do
@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       resources :user_clubs
       resources :users
       resources :notifications
+      resources :subscribers
       post '/find-club-by-name', to: 'clubs#find_by_name'
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'

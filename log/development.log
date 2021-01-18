@@ -3120,3 +3120,385 @@ Migrating to CreateSubscribers (20210117215110)
   [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6455717514138254565)[0m
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/subscribers" for ::1 at 2021-01-17 19:28:31 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/subscribers"):
+  
+Started GET "/api/v1/clubs" for ::1 at 2021-01-17 19:30:53 -0500
+Processing by Api::V1::ClubsController#index as HTML
+  [1m[36mClub Load (6.3ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (2.0ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (1.3ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (1.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.3ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.2ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.4ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.3ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.2ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.2ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.2ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.2ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.2ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.1ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.2ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.1ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.1ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.1ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.1ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.2ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.1ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.1ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.2ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.2ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (255.64ms)
+Completed 200 OK in 318ms (Views: 240.8ms | ActiveRecord: 55.6ms | Allocations: 133011)
+
+
+Started GET "/api/v1/clubs" for ::1 at 2021-01-17 19:30:54 -0500
+Processing by Api::V1::ClubsController#index as */*
+  [1m[36mClub Load (0.4ms)[0m  [1m[34mSELECT "clubs".* FROM "clubs"[0m
+  ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.3ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.3ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.4ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.3ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.2ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.3ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.2ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.2ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.1ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.1ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.2ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.2ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.2ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.2ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.1ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.1ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.1ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.1ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.1ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.1ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUserClub Load (0.1ms)[0m  [1m[34mSELECT "user_clubs".* FROM "user_clubs" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "user_clubs" ON "users"."id" = "user_clubs"."user_id" WHERE "user_clubs"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mClubWatchlist Load (0.1ms)[0m  [1m[34mSELECT "club_watchlists".* FROM "club_watchlists" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "club_watchlists" ON "movies"."id" = "club_watchlists"."movie_id" WHERE "club_watchlists"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."club_id" = $1[0m  [["club_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/clubs_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (139.48ms)
+Completed 200 OK in 143ms (Views: 129.7ms | ActiveRecord: 13.2ms | Allocations: 80516)
+
+
+Started POST "/api/v1/subscribers" for ::1 at 2021-01-17 19:32:22 -0500
+Processing by Api::V1::SubscribersController#create as JSON
+  Parameters: {"name"=>"Test User", "email"=>"test@test.com", "phone"=>"11234567890", "subscriber"=>{"name"=>"Test User"}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+  [1m[36mSubscriber Create (14.8ms)[0m  [1m[32mINSERT INTO "subscribers" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test User"], ["created_at", "2021-01-18 00:35:30.419669"], ["updated_at", "2021-01-18 00:35:30.419669"]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.74ms)
+Completed 500 Internal Server Error in 187904ms (ActiveRecord: 23.3ms | Allocations: 50361)
+
+
+  
+NoMethodError (undefined method `read_attribute_for_serialization' for #<ActionController::Parameters {"name"=>"Test User"} permitted: true>):
+  
+app/controllers/api/v1/subscribers_controller.rb:18:in `create'
+Started POST "/api/v1/subscribers" for ::1 at 2021-01-17 19:36:41 -0500
+Processing by Api::V1::SubscribersController#create as JSON
+  Parameters: {"name"=>"Test", "email"=>"test@test.com", "phone"=>"11234567890", "subscriber"=>{"name"=>"Test"}}
+[31mUnpermitted parameters: :email, :phone, :subscriber[0m
+Started POST "/api/v1/subscribers" for ::1 at 2021-01-17 19:43:49 -0500
+[31mUnpermitted parameters: :email, :phone, :subscriber[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+  [1m[36mSubscriber Create (1.3ms)[0m  [1m[32mINSERT INTO "subscribers" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test"], ["created_at", "2021-01-18 00:43:55.482377"], ["updated_at", "2021-01-18 00:43:55.482377"]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+[31mUnpermitted parameters: :email, :phone, :subscriber[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.41ms)
+Completed 500 Internal Server Error in 433810ms (ActiveRecord: 10.6ms | Allocations: 17524)
+
+
+  
+NoMethodError (undefined method `read_attribute_for_serialization' for #<ActionController::Parameters {"name"=>"Test"} permitted: true>):
+  
+app/controllers/api/v1/subscribers_controller.rb:18:in `create'
+Processing by Api::V1::SubscribersController#create as JSON
+  Parameters: {"name"=>"Test", "email_address"=>"test@test.com", "phone_number"=>"11234567890", "subscriber"=>{"name"=>"Test", "phone_number"=>"11234567890", "email_address"=>"test@test.com"}}
+[31mUnpermitted parameter: :subscriber[0m
+[31mUnpermitted parameter: :subscriber[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+  [1m[36mSubscriber Create (0.4ms)[0m  [1m[32mINSERT INTO "subscribers" ("name", "phone_number", "email_address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Test"], ["phone_number", "11234567890"], ["email_address", "test@test.com"], ["created_at", "2021-01-18 00:44:18.989842"], ["updated_at", "2021-01-18 00:44:18.989842"]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+[31mUnpermitted parameter: :subscriber[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.76ms)
+Completed 500 Internal Server Error in 23214ms (ActiveRecord: 8.0ms | Allocations: 24709)
+
+
+  
+NoMethodError (undefined method `read_attribute_for_serialization' for #<ActionController::Parameters {"name"=>"Test", "phone_number"=>"11234567890", "email_address"=>"test@test.com"} permitted: true>):
+  
+app/controllers/api/v1/subscribers_controller.rb:18:in `create'
+Started POST "/api/v1/subscribers" for ::1 at 2021-01-17 19:45:44 -0500
+Processing by Api::V1::SubscribersController#create as JSON
+  Parameters: {"name"=>"Test", "email_address"=>"test@test.com", "phone_number"=>"11234567890", "subscriber"=>{"name"=>"Test", "phone_number"=>"11234567890", "email_address"=>"test@test.com"}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+  [1m[36mSubscriber Create (0.3ms)[0m  [1m[32mINSERT INTO "subscribers" ("name", "phone_number", "email_address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Test"], ["phone_number", "11234567890"], ["email_address", "test@test.com"], ["created_at", "2021-01-18 00:48:15.787301"], ["updated_at", "2021-01-18 00:48:15.787301"]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:16:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.71ms)
+Completed 500 Internal Server Error in 151104ms (ActiveRecord: 6.5ms | Allocations: 65237)
+
+
+  
+NoMethodError (undefined method `read_attribute_for_serialization' for #<ActionController::Parameters {"name"=>"Test", "phone_number"=>"11234567890", "email_address"=>"test@test.com"} permitted: true>):
+  
+app/controllers/api/v1/subscribers_controller.rb:18:in `create'
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-17 19:52:10 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"testing", "media_url"=>"testing", "notification"=>{"body"=>"testing", "media_url"=>"testing"}}
+  [1m[36mSubscriber Load (1.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/models/notification.rb:21:in `send_sms'
+Completed 204 No Content in 92886ms (ActiveRecord: 18.8ms | Allocations: 56821)
+
+
+Started POST "/api/v1/alert-users" for ::1 at 2021-01-17 19:53:55 -0500
+Processing by Api::V1::NotificationsController#alert_users as JSON
+  Parameters: {"body"=>"test", "media_url"=>"test", "notification"=>{"body"=>"test", "media_url"=>"test"}}
+  [1m[36mSubscriber Load (1.0ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/models/notification.rb:24:in `send_sms'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6455717514138254565)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddStatusColumnToSubscribers (20210118013156)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.1ms)[0m  [1m[35mALTER TABLE "subscribers" ADD "status" boolean DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210118013156"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6455717514138254565)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

@@ -6,3 +6,5 @@
 2021-01-16 21:15:21.479 EST [10798] LOG:  database system is ready to accept connections
 2021-01-16 21:16:26.894 EST [11703] FATAL:  database "le_cine_backend_development" does not exist
 2021-01-16 21:16:28.001 EST [11704] FATAL:  database "le_cine_backend_development" does not exist
+2021-01-17 17:31:15.734 EST [10803] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Interrupted system call
+2021-01-17 18:09:27.479 EST [10803] WARNING:  could not open statistics file "pg_stat_tmp/global.stat": Interrupted system call
