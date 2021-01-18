@@ -5800,3 +5800,569 @@ Processing by Api::V1::SubscribersController#index as */*
 Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 1.1ms | Allocations: 1544)
 
 
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 08:02:26 -0500
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (2.0ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.87ms)
+Completed 200 OK in 35ms (Views: 17.9ms | ActiveRecord: 6.2ms | Allocations: 7672)
+
+
+Started PATCH "/api/v1/subscribers/1" for ::1 at 2021-01-18 08:02:28 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"name"=>"Test User", "email_address"=>"", "phone_number"=>nil, "status"=>true, "id"=>"1", "subscriber"=>{"name"=>"Test User", "phone_number"=>nil, "email_address"=>"", "status"=>true}}
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:28:in `update'
+  [1m[36mSubscriber Update (2.4ms)[0m  [1m[33mUPDATE "subscribers" SET "updated_at" = $1, "status" = $2 WHERE "subscribers"."id" = $3[0m  [["updated_at", "2021-01-18 13:02:28.496404"], ["status", true], ["id", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:28:in `update'
+[active_model_serializers] Rendered SubscriberSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 15ms (Views: 1.3ms | ActiveRecord: 4.5ms | Allocations: 3698)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 08:03:01 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.6ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.71ms)
+Completed 200 OK in 39ms (Views: 31.4ms | ActiveRecord: 1.6ms | Allocations: 1561)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:54:40 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (3.1ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.54ms)
+Completed 200 OK in 133ms (Views: 127.8ms | ActiveRecord: 20.4ms | Allocations: 3683)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:55:02 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.15ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1561)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:55:04 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.98ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:55:09 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (38.82ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.4ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:55:38 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.75ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:55:53 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.23ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:55:56 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.71ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:55:58 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.7ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.42ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 1.7ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:56:00 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.9ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:56:06 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.56ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:56:10 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.94ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:56:48 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.0ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.95ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 1.0ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:56:48 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.23ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.5ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:56:49 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.7ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.07ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.7ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:56:49 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.05ms)
+Completed 200 OK in 12ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:56:54 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.0ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.64ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 1.0ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:56:59 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.84ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:57:14 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.8ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.25ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.8ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:57:18 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.51ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:57:23 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.0ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.42ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 1.0ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:57:24 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.13ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:57:52 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.51ms)
+Completed 200 OK in 74ms (Views: 70.6ms | ActiveRecord: 1.4ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:57:54 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.3ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:57:56 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.32ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:58:01 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.4ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:58:09 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.7ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.03ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.7ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:58:11 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.85ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 1.3ms | Allocations: 1544)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:58:16 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.7ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.85ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.7ms | Allocations: 1544)
+
+
+Started PATCH "/api/v1/subscribers/1" for ::1 at 2021-01-18 09:58:34 -0500
+Processing by Api::V1::SubscribersController#update as JSON
+  Parameters: {"name"=>"Test User", "email_address"=>"", "phone_number"=>nil, "status"=>false, "id"=>"1", "subscriber"=>{"name"=>"Test User", "phone_number"=>nil, "email_address"=>"", "status"=>false}}
+  [1m[36mSubscriber Load (1.1ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:28:in `update'
+  [1m[36mSubscriber Update (3.1ms)[0m  [1m[33mUPDATE "subscribers" SET "updated_at" = $1, "status" = $2 WHERE "subscribers"."id" = $3[0m  [["updated_at", "2021-01-18 14:58:34.387537"], ["status", false], ["id", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:28:in `update'
+[active_model_serializers] Rendered SubscriberSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 86ms (Views: 7.1ms | ActiveRecord: 7.3ms | Allocations: 2435)
+
+
+Started DELETE "/api/v1/subscribers/1" for ::1 at 2021-01-18 09:58:36 -0500
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::SubscribersController
+Did you mean?  delete
+               index
+               decoded_token
+               create):
+  
+actionpack (6.1.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:58:52 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.14ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1543)
+
+
+Started DELETE "/api/v1/subscribers/1" for ::1 at 2021-01-18 09:58:54 -0500
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::SubscribersController
+Did you mean?  delete
+               index
+               decoded_token
+               create):
+  
+actionpack (6.1.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:59:34 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.04ms)
+Completed 200 OK in 40ms (Views: 13.0ms | ActiveRecord: 17.0ms | Allocations: 5542)
+
+
+Started DELETE "/api/v1/subscribers/1" for ::1 at 2021-01-18 09:59:36 -0500
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Api::V1::SubscribersController
+Did you mean?  delete
+               index
+               decoded_token
+               create):
+  
+actionpack (6.1.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 09:59:46 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.08ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1543)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:00:31 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.4ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.45ms)
+Completed 200 OK in 26ms (Views: 13.3ms | ActiveRecord: 6.7ms | Allocations: 5502)
+
+
+Started DELETE "/api/v1/subscribers/2" for ::1 at 2021-01-18 10:00:35 -0500
+Processing by Api::V1::SubscribersController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+  [1m[36mSubscriber Destroy (1.8ms)[0m  [1m[31mDELETE FROM "subscribers" WHERE "subscribers"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 15ms (Views: 5.5ms | ActiveRecord: 3.0ms | Allocations: 2520)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:00:42 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.42ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 1402)
+
+
+Started DELETE "/api/v1/subscribers/1" for ::1 at 2021-01-18 10:00:45 -0500
+Processing by Api::V1::SubscribersController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+  [1m[36mSubscriber Destroy (0.8ms)[0m  [1m[31mDELETE FROM "subscribers" WHERE "subscribers"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 1934)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:01:18 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.23ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1259)
+
+
+Started DELETE "/api/v1/subscribers/3" for ::1 at 2021-01-18 10:01:22 -0500
+Processing by Api::V1::SubscribersController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+  [1m[36mSubscriber Destroy (0.9ms)[0m  [1m[31mDELETE FROM "subscribers" WHERE "subscribers"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 1.8ms | Allocations: 1935)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:01:25 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.57ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:01:37 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started DELETE "/api/v1/subscribers/4" for ::1 at 2021-01-18 10:01:39 -0500
+Processing by Api::V1::SubscribersController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers" WHERE "subscribers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+  [1m[36mSubscriber Destroy (0.3ms)[0m  [1m[31mDELETE FROM "subscribers" WHERE "subscribers"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:35:in `destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 1.1ms | Allocations: 1933)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:01:41 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 963)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:01:48 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (0.5ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 963)
+
+
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-18 10:02:34 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (2.3ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.67ms)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 2.3ms | Allocations: 963)
+
+

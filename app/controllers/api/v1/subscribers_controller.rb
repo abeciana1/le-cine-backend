@@ -24,12 +24,11 @@ class Api::V1::SubscribersController < ApplicationController
 
     def update
         subscriber = Subscriber.find(params[:id])
-        # binding.pry
         subscriber.update(subscriber_params)
         render :json => subscriber, each_serializer: SubscriberSerializer
     end
     
-    def delete
+    def destroy
         subscriber = Subscriber.find(params[:id])
         subscriber.destroy
         render json: {}
