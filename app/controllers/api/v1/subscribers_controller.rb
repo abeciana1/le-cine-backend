@@ -16,7 +16,7 @@ class Api::V1::SubscribersController < ApplicationController
     def create
         subscriber = Subscriber.create(subscriber_params)
         if subscriber.valid?
-            Notification.welcome
+            # Notification.welcome
             render json: {subscriber: SubscriberSerializer.new(subscriber_params)}, status: :created
         else
             render json: { error: 'failed to become subscriber'}, status: :not_acceptable

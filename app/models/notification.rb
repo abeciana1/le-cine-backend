@@ -48,19 +48,19 @@ class Notification < ApplicationRecord
         end
     end
 
-    def self.welcome
-        account_sid = ENV['TWILIO_ACCOUNT_SID']
-        auth_token = ENV['TWILIO_AUTH_TOKEN']
-        # binding.pry
-        @client = Twilio::REST::Client.new(@@account_sid, @@auth_token)
+    # def self.welcome
+    #     account_sid = ENV['TWILIO_ACCOUNT_SID']
+    #     auth_token = ENV['TWILIO_AUTH_TOKEN']
+    #     # binding.pry
+    #     @client = Twilio::REST::Client.new(@@account_sid, @@auth_token)
 
-        # f_name = subscriber.name.split(" ")[0]
-        subscriber = Subscriber.last
+    #     # f_name = subscriber.name.split(" ")[0]
+    #     subscriber = Subscriber.last
 
-        message = @client.messages.create(
-                    body: "Hey, welcome to Pandemic Film Club! Each week you can text "pfc" (no case sensitivity) to find out the discussion and watchalong films. Also, feel free to check out http://localhost:3000/pandemic-film-club for more info on the films.",
-                    from: '+19177468440',
-                    to: subscriber["phone_number"]
-                )
-    end
+    #     message = @client.messages.create(
+    #                 body: "Hey, welcome to Pandemic Film Club! Each week you can text "pfc" (no case sensitivity) to find out the discussion and watchalong films. Also, feel free to check out http://localhost:3000/pandemic-film-club for more info on the films.",
+    #                 from: '+19177468440',
+    #                 to: subscriber["phone_number"]
+    #             )
+    # end
 end
