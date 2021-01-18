@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_18_013156) do
+ActiveRecord::Schema.define(version: 2021_01_18_024916) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -111,7 +111,7 @@ ActiveRecord::Schema.define(version: 2021_01_18_013156) do
     t.string "email_address", default: ""
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "status", default: false
+    t.boolean "status", default: true
   end
 
   create_table "user_clubs", force: :cascade do |t|

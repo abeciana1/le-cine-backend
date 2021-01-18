@@ -3714,3 +3714,50 @@ Processing by Api::V1::SubscribersController#index as */*
 Completed 200 OK in 158ms (Views: 151.0ms | ActiveRecord: 20.3ms | Allocations: 3457)
 
 
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-17 21:38:41 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.1ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.43ms)
+Completed 200 OK in 59ms (Views: 45.4ms | ActiveRecord: 8.2ms | Allocations: 7061)
+
+
+Started POST "/api/v1/subscribers" for ::1 at 2021-01-17 21:39:05 -0500
+Processing by Api::V1::SubscribersController#create as JSON
+  Parameters: {"name"=>"Fake Person", "email_address"=>"fake@fake.com", "phone_number"=>"11234567890", "status"=>true, "subscriber"=>{"name"=>"Fake Person", "phone_number"=>"11234567890", "email_address"=>"fake@fake.com", "status"=>true}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:15:in `create'
+  [1m[36mSubscriber Create (5.6ms)[0m  [1m[32mINSERT INTO "subscribers" ("name", "phone_number", "email_address", "created_at", "updated_at", "status") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Fake Person"], ["phone_number", "11234567890"], ["email_address", "fake@fake.com"], ["created_at", "2021-01-18 02:39:05.102381"], ["updated_at", "2021-01-18 02:39:05.102381"], ["status", true]]
+  ↳ app/controllers/api/v1/subscribers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:15:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.24ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 7.4ms | Allocations: 2977)
+
+
+  
+NoMethodError (undefined method `read_attribute_for_serialization' for #<ActionController::Parameters {"name"=>"Fake Person", "phone_number"=>"11234567890", "email_address"=>"fake@fake.com", "status"=>true} permitted: true>):
+  
+app/controllers/api/v1/subscribers_controller.rb:17:in `create'
+Started GET "/api/v1/subscribers" for ::1 at 2021-01-17 21:39:07 -0500
+Processing by Api::V1::SubscribersController#index as */*
+  [1m[36mSubscriber Load (1.2ms)[0m  [1m[34mSELECT "subscribers".* FROM "subscribers"[0m
+  ↳ app/controllers/api/v1/subscribers_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.13ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.2ms | Allocations: 1428)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6455717514138254565)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeColumnSubscribersDefaultValue (20210118024916)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6455717514138254565)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6455717514138254565)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeColumnSubscribersDefaultValue (20210118024916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.7ms)[0m  [1m[35mALTER TABLE "subscribers" ALTER COLUMN "status" TYPE boolean, ALTER COLUMN "status" SET DEFAULT TRUE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210118024916"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6455717514138254565)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
