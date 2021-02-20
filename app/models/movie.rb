@@ -28,6 +28,7 @@ class Movie < ApplicationRecord
         detail_res = HTTParty.get("https://api.themoviedb.org/3/movie/#{id}?api_key=#{key}&language=en-US")
         trailer_res = HTTParty.get("https://api.themoviedb.org/3/movie/#{detail_res["id"]}/videos?api_key=#{key}&language=en-US")
         recommended = HTTParty.get("https://api.themoviedb.org/3/movie/#{detail_res["id"]}/recommendations?api_key=#{key}&language=en-US&page=1")
+        credits_res = HTTParty.get("https://api.themoviedb.org/3/movie/#{detail_res["id"]}/credits?api_key=#{key}&language=en-US")
         # binding.pry
         detail_res["trailer"] = trailer_res["results"][0]
         detail_res["recommendations"] = recommended["results"]
